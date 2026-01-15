@@ -86,7 +86,7 @@ export default function HomePage() {
         </CardHeader>
         <CardContent className="space-y-4">
           <p>
-            Wikipedia is a primary source for training
+            Wikipedia is a very important source for training
             nearly every large language model today. From GPT to Gemini to Claude, virtually
             all frontier AI systems ingest Wikipedia as foundational training data.
           </p>
