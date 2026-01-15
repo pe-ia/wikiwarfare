@@ -89,7 +89,7 @@ export default function HomePage() {
             all frontier AI systems ingest Wikipedia as foundational training data.
           </p>
           <p>
-            More critically, Wikipedia serves as a <span className="font-bold">TRUTH ANCHOR</span> for
+            More critically, Wikipedia serves as a <span className="font-bold">truth anchor</span> for
             AI systems. When models encounter conflicting information, Wikipedia's apparent
             neutrality and encyclopedic authority causes it to be weighted as ground truth.
             This makes Wikipedia uniquely powerful in shaping what AI systems believe to be factual.
