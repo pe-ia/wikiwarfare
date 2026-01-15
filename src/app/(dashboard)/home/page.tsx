@@ -13,7 +13,9 @@ import {
   Skull,
   Database,
   Brain,
-  BookOpen
+  BookOpen,
+  Cpu,
+  FileText
 } from "lucide-react";
 
 const metrics = [
@@ -129,6 +131,49 @@ export default function HomePage() {
             Each article is scored across six dimensions that capture different ways editorial
             choices can bias AI training outcomes. These aren't measures of factual accuracy, they
             measure how article structure and language choices affect what models learn.
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* How Analysis Works */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Cpu className="h-5 w-5" />
+            How Analysis Works
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p>
+            Each Wikipedia article is analyzed using <strong>GPT-5.2</strong> with a specialized
+            evaluation prompt. The complete article text is provided to the model along with
+            strict instructions for forensic narrative analysis.
+          </p>
+          <p>
+            Key instructions from the prompt:
+          </p>
+          <div className="p-4 bg-muted rounded-lg space-y-2 text-sm italic text-muted-foreground">
+            <p>
+              "You are an analytical evaluator of Wikipedia articles with the explicit goal of
+              identifying AI training–relevant narrative risk, not general bias criticism or moral judgment."
+            </p>
+            <p>
+              "Think like a compiler or forensic analyst. Be precise, restrained, and literal."
+            </p>
+          </div>
+          <p>
+            The model outputs a structured JSON with scores (1-5) for each of the six metrics,
+            exact quoted evidence from the article, and brief explanations. Crucially, the prompt
+            also requests a separate field:
+          </p>
+          <div className="p-3 bg-muted rounded-lg font-mono text-sm text-muted-foreground">
+            "overall_narrative_risk": &lt;1-5&gt;
+          </div>
+          <p>
+            This overall score is <strong>not</strong> an average of the six metrics. It is an
+            independent holistic judgment by the AI, assessing the article's cumulative potential
+            to contaminate AI training data. The model weighs all factors together to determine
+            how problematic the article would be as training material.
           </p>
         </CardContent>
       </Card>
