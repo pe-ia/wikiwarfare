@@ -1,3 +1,9 @@
 {
-  "outputDirectory": "out"
+  "outputDirectory": "out",
+  "rewrites": [
+    { "source": "/articles", "destination": "/articles.html" },
+    { "source": "/compare", "destination": "/compare.html" },
+    { "source": "/stats", "destination": "/stats.html" },
+    { "source": "/home", "destination": "/home.html" }
+  ]
 }
