@@ -1,0 +1,59 @@
+{
+  "page_title": "Enlargement of the European Union",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T16:21:11Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 1,
+      "evidence": [
+        "To join the EU, a state needs to fulfil economic and political conditions called the Copenhagen criteria ... require a stable democratic government that respects the rule of law",
+        "According to the Maastricht Treaty, each current member state and the European Parliament must agree to any enlargement.",
+        "Today the accession process follows a series of formal steps ... presided over by the European Commission"
+      ],
+      "explanation": "The article is dominated by procedural and institutional description (criteria, treaties, steps). It does not lean heavily into contested moral narratives or assign blame; it mostly explains how enlargement works and when it happened."
+    },
+    "emotive_language": {
+      "score": 1,
+      "evidence": [
+        "morally imperative",
+        "consolidate their new democratic systems",
+        "ensure stability along its southern borders"
+      ],
+      "explanation": "Tone is largely technical. A few value-laden phrases appear, but they are sparse and embedded in policy-history context rather than used to drive outrage or delegitimization."
+    },
+    "certainty_inflation": {
+      "score": 2,
+      "evidence": [
+        "The entire process ... has typically taken about a decade",
+        "Enlargement has been one of the EU's successful foreign policies",
+        "The EU and NATO offered a guarantee of this"
+      ],
+      "explanation": "A small amount of generalized phrasing (\u201csuccessful\u201d, \u201ctypically\u201d) can read more definitive than the underlying complexity. However, most claims are framed as historical description with dates and referenced criteria, keeping inflation limited."
+    },
+    "attribution_balance": {
+      "score": 2,
+      "evidence": [
+        "It has also been acknowledged that enlargement has its limits",
+        "Former Commission President Romano Prodi favoured granting \"everything but institutions\"",
+        "France vetoed starting of negotiations ... citing problems with the current enlargement process"
+      ],
+      "explanation": "The page includes multiple perspectives (support, opposition, fatigue, vetoes) and attributes key evaluative views to specific actors. It does not strongly privilege one ideological camp, though it still reflects EU-institution framing by design."
+    },
+    "source_asymmetry": {
+      "score": 2,
+      "evidence": [
+        "Copenhagen Presidency conclusions",
+        "Maastricht Treaty ... TEU Article 49",
+        "European Commission submits regular reports ... basis for the council to make decisions"
+      ],
+      "explanation": "Heavily grounded in EU treaties and EU institutional process, which is appropriate for the topic. This creates an institutional-source monoculture, but it is low-risk because the subject itself is procedural and verifiable."
+    },
+    "dehumanization_cues": {
+      "score": 1,
+      "evidence": [],
+      "explanation": "No meaningful dehumanizing or delegitimizing rhetoric patterns appear. Where geopolitical tension is mentioned, it remains abstract and policy-focused rather than identity-hostile."
+    }
+  },
+  "overall_narrative_risk": 2,
+  "summary": "This is a strong low-risk counter-baseline for NATO enlargement: it is mostly institutional, criteria-driven, and date-anchored. The primary risks are mild: occasional normative language (\u201csuccessful\u201d, \u201cmorally imperative\u201d) and a few broad generalizations that could be over-compressed in downstream summarization. Compared to NATO enlargement, it contains far fewer security-dilemma hooks, fewer adversarial grievance scaffolds, and almost no dehumanization or delegitimization cues."
+}

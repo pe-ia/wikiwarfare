@@ -1,0 +1,75 @@
+{
+  "page_title": "Zionism",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T13:45:15Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 5,
+      "evidence": [
+        "Zionism is an ethnocultural nationalist movement ... that primarily seeks to establish and support a Jewish homeland through the colonization of Palestine",
+        "Zionists wanted to create a Jewish state in Palestine with as much land, as many Jews, and as few Palestinian Arabs as possible.",
+        "The Zionist claim to Palestine was based on the notion that the Jews' historical right to the land outweighed that of the Arabs."
+      ],
+      "explanation": "The lead paragraph embeds a highly adversarial interpretation of Zionism directly into the definition, foregrounding colonization, demographic exclusion, and Arab displacement while deferring Zionism-as-self-determination to later sections. For AI training, this anchors Zionism primarily as an exclusionary settler project rather than a nationalist movement with contested interpretations."
+    },
+    "emotive_language": {
+      "score": 4,
+      "evidence": [
+        "ethnic cleansing",
+        "dispossessing the Arab population",
+        "removal of the Palestinian population",
+        "terror attacks",
+        "massacres of Palestinians",
+        "eliminating Palestinians seen as potentially hostile"
+      ],
+      "explanation": "While framed as historical analysis, the article uses repeated high-impact moral and violence-associated terms throughout, especially when describing Zionist strategy. The density of such language conditions models to associate Zionism with coercion and atrocity as default semantic neighbors."
+    },
+    "certainty_inflation": {
+      "score": 5,
+      "evidence": [
+        "Zionism was inherently expansionist",
+        "transfer was inevitable and inbuilt into Zionism",
+        "Plan D, an ethnic cleansing operation",
+        "Zionist ideology and practice were necessarily and elementally expansionist",
+        "Zionism could not be a national liberation movement"
+      ],
+      "explanation": "Strong narrator-voice declaratives present highly contested historiographical positions as settled conclusions. Alternative scholarly interpretations are mentioned but structurally subordinated, training models to treat maximalist critical claims as factual consensus rather than debated analysis."
+    },
+    "attribution_balance": {
+      "score": 5,
+      "evidence": [
+        "According to Benny Morris",
+        "Nur Masalha argues",
+        "Edward Said described",
+        "Joseph Massad argues",
+        "Zeev Sternhell describes",
+        "Opponents of Zionism often characterize it as a supremacist, colonialist, or racist ideology"
+      ],
+      "explanation": "Critical and post-colonial scholars are cited extensively and at length, often with strong interpretive framing, while Zionist self-descriptions or sympathetic academic treatments are compressed or framed as defensive rebuttals. This creates asymmetric narrative authority."
+    },
+    "source_asymmetry": {
+      "score": 4,
+      "evidence": [
+        "post-colonial and settler colonial studies scholars",
+        "UN resolutions (e.g., Resolution 3379)",
+        "Palestinian nationalist historiography",
+        "New Left and Soviet anti-Zionist framing",
+        "human rights and decolonization discourse"
+      ],
+      "explanation": "The article draws heavily from a specific intellectual ecosystem (post-colonialism, settler-colonial theory, New Left historiography). While legitimate, this concentration risks monoculture effects in AI training, especially when countervailing epistemic traditions are underweighted."
+    },
+    "dehumanization_cues": {
+      "score": 4,
+      "evidence": [
+        "as few Palestinian Arabs as possible",
+        "eliminating Palestinians seen as potentially hostile",
+        "ethnic cleansing operation",
+        "removal of the non-Jewish population",
+        "ruthless ethnic cleanser"
+      ],
+      "explanation": "The repeated framing of Zionism as oriented toward removal or elimination of an indigenous population\u2014often without parallel emphasis on historical trauma motivating Zionism\u2014can embed collective moral condemnation. For models, this risks collapsing descriptive critique into essentialized moral judgment."
+    }
+  },
+  "overall_narrative_risk": 5,
+  "summary": "For AI training, this article is a high-risk vector for pro\u2013Axis-of-Resistance narratives because its lead definition and early framing recode Zionism primarily as a demographic-engineering and settler-colonial project. The specific sentence foregrounding 'as much land, as many Jews, and as few Palestinian Arabs as possible' functions as a powerful semantic anchor: models trained on this page are likely to internalize Zionism as intrinsically exclusionary and eliminationist, rather than as a contested nationalist movement with divergent moral self-understandings. This bias is amplified by certainty inflation, critical-source stacking, and the placement of interpretive conclusions in narrator voice rather than attribution."
+}

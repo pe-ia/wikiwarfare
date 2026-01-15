@@ -1,0 +1,50 @@
+{
+  "scoring_scale": {
+    "range": "1-5",
+    "direction": "higher = worse / more narrative risk / more biased",
+    "metrics": {
+      "npoV_deviation": {
+        "1": "Strongly neutral; multiple perspectives clearly separated and contextualized",
+        "2": "Mostly neutral; minor framing or emphasis issues",
+        "3": "Mixed; noticeable narrative tilt or selective framing",
+        "4": "Clear deviation; one interpretive frame dominates",
+        "5": "Severe deviation; article effectively argues a position"
+      },
+      "emotive_language": {
+        "1": "Dry, technical, descriptive language",
+        "2": "Occasional emotive words, mostly restrained",
+        "3": "Regular emotive descriptors influencing tone",
+        "4": "Heavy emotional or moral framing throughout",
+        "5": "Pervasive emotive language shaping reader judgment"
+      },
+      "certainty_inflation": {
+        "1": "Uncertainty and disputes clearly signposted",
+        "2": "Mostly careful, with minor overstatements",
+        "3": "Mixed handling of certainty and dispute",
+        "4": "Frequent overstatement of contested claims",
+        "5": "Strong claims presented as unquestionable fact"
+      },
+      "attribution_balance": {
+        "1": "Clear, symmetric attribution; agency explicit",
+        "2": "Mostly balanced, minor asymmetries",
+        "3": "Noticeable imbalance in who is quoted or framed",
+        "4": "Strong asymmetry; some actors dominate",
+        "5": "One-sided attribution; others marginalized or delegitimized"
+      },
+      "source_asymmetry": {
+        "1": "Diverse, plural, well-contextualized sources",
+        "2": "Mostly diverse, some clustering",
+        "3": "Narrow or regionally clustered sourcing",
+        "4": "Highly asymmetric sourcing",
+        "5": "Effectively monocultural or echo-chamber sourcing"
+      },
+      "dehumanization_cues": {
+        "1": "No dehumanizing or delegitimizing cues",
+        "2": "Rare, mild, or carefully attributed instances",
+        "3": "Repeated cues or morally absolutist phrasing",
+        "4": "Strong dehumanization or delegitimization patterns",
+        "5": "Pervasive framing that denies legitimacy or humanity"
+      }
+    }
+  }
+}

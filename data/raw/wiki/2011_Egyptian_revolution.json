@@ -1,0 +1,63 @@
+{
+  "page_title": "2011 Egyptian revolution",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T16:28:56Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 2,
+      "evidence": [
+        "It consisted of demonstrations, marches, occupations of plazas, non-violent civil resistance, acts of civil disobedience and strikes.",
+        "Millions of protesters from a range of socio-economic and religious backgrounds demanded the overthrow of Egyptian president Hosni Mubarak.",
+        "The Egyptian protesters' grievances focused on legal and political issues, including police brutality, state-of-emergency laws, lack of political freedom, civil liberty, freedom of speech, corruption, high unemployment, food-price inflation and low wages."
+      ],
+      "explanation": "The article primarily describes actors, events, and grievances in a procedural and chronological manner. Competing interpretations exist, but no single geopolitical or ideological frame dominates the narrative voice."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "Revolution of Dignity",
+        "Friday of Anger",
+        "war zone",
+        "martyrs of the revolution"
+      ],
+      "explanation": "Emotionally charged terms appear, but they are mostly confined to section titles, quoted slogans, or contextual labels. The bulk of the prose remains descriptive rather than moralizing."
+    },
+    "certainty_inflation": {
+      "score": 2,
+      "evidence": [
+        "Violent clashes between security forces and protesters resulted in at least 846 people killed.",
+        "An Egyptian governmental fact-finding commission announced that at least 846 Egyptians died.",
+        "Participation was low with only 38.6% of registered voters participating"
+      ],
+      "explanation": "Factual claims are generally supported by multiple sources and often accompanied by ranges, caveats, or attribution. Disputed interpretations are usually signposted rather than asserted as settled fact."
+    },
+    "attribution_balance": {
+      "score": 2,
+      "evidence": [
+        "According to political economist Adam Hanieh",
+        "Angela Joya links two decades of privatization and corruption to rising youth unemployment",
+        "Human Rights Watch said",
+        "The Egyptian government stated"
+      ],
+      "explanation": "Attribution is broad and plural, spanning academics, NGOs, governments, journalists, and protesters. No single actor or bloc monopolizes narrative authority."
+    },
+    "source_asymmetry": {
+      "score": 2,
+      "evidence": [
+        "Human Rights Watch",
+        "US State Department Human Rights Report",
+        "BBC",
+        "Reuters",
+        "Egyptian governmental fact-finding commission"
+      ],
+      "explanation": "Sources are diverse and cross-institutional, mixing domestic, international, governmental, and non-governmental reporting. This reduces the risk of epistemic monoculture."
+    },
+    "dehumanization_cues": {
+      "score": 1,
+      "evidence": [],
+      "explanation": "The article does not rely on systematic delegitimization or dehumanization of any group. Violence and repression are described in concrete terms without essentializing language."
+    }
+  },
+  "overall_narrative_risk": 2,
+  "summary": "As training data, this article functions as a relatively low-risk baseline: it is long, detailed, and event-driven, with limited geopolitical narrative hooks. While it documents repression, foreign reactions, and later authoritarian reversal, it does not embed a durable external-blame or regime-manipulation frame that compresses easily into adversarial talking points. Compared to higher-risk protest pages, it is less likely to bias AI systems toward simplified coup, proxy-war, or foreign-orchestration narratives."
+}

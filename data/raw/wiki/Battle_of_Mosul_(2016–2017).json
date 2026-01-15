@@ -1,0 +1,68 @@
+{
+  "page_title": "Battle of Mosul (2016\u20132017)",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T14:34:30Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 2,
+      "evidence": [
+        "was a major battle initiated by Iraq and allied forces[a] to retake the city of Mosul from the Islamic State (IS)",
+        "Result: Iraqi and allied victory",
+        "The Iraqi armed forces recaptured all of eastern Mosul by 24 January 2017... the rest of Mosul was retaken by 20 July 2017"
+      ],
+      "explanation": "The page is anchored in an operational chronology (campaign phases, territorial changes, orders of battle) with limited narrator-voice interpretation. Where politically charged topics appear, they are typically placed in clearly labeled sections (e.g., humanitarian issues, allegations) rather than defining the conflict in the lead."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "largest conventional land battle since the capture of Baghdad in 2003",
+        "considered the toughest urban battle since World War II",
+        "heavy clashes continued in a final pocket of ISIL resistance"
+      ],
+      "explanation": "Intensity is conveyed mostly through scale descriptors and military characterization rather than moralized adjectives. Dramatic phrasing exists, but it does not dominate the article\u2019s register or consistently steer the reader toward a moral conclusion about any state actor."
+    },
+    "certainty_inflation": {
+      "score": 2,
+      "evidence": [
+        "Iraqi and allied victory",
+        "However... the fighting continued... until 20 July... these were \"clearance operations.\"",
+        "An Associated Press investigation... claimed...",
+        "The coalition... has acknowledged responsibility for 326 deaths."
+      ],
+      "explanation": "The text routinely separates event facts (dates, outcomes) from contested claims by attributing them to investigations, institutions, or officials, and it preserves multiple estimates for key disputed quantities (civilian deaths). This reduces the risk of models learning a single, overconfident causal narrative."
+    },
+    "attribution_balance": {
+      "score": 2,
+      "evidence": [
+        "Human Rights Watch called for...",
+        "Amnesty International accused...",
+        "United Nations ... estimated...",
+        "The coalition on the other hand has acknowledged responsibility...",
+        "ISIL was held responsible for killing one third..."
+      ],
+      "explanation": "Critiques of coalition/Iraqi conduct are framed explicitly as allegations or assessments by named organizations, alongside descriptions of ISIL tactics and abuses. Responsibility and agency are distributed across multiple actors with explicit sourcing, limiting one-sided narrator adjudication."
+    },
+    "source_asymmetry": {
+      "score": 2,
+      "evidence": [
+        "United Nations ... humanitarian coordinator in Iraq",
+        "UN Assistance Mission for Iraq and the Office of the UN High Commissioner for Human Rights",
+        "Amnesty International accused Iraqi and United States forces",
+        "An Associated Press investigation..."
+      ],
+      "explanation": "While many evaluative claims draw on UN/NGO/major media sources, the article also includes official statements and multiple competing casualty estimates rather than relying on a single pipeline. The resulting picture is plural and cross-checked enough to avoid an echo-chamber effect in the excerpt."
+    },
+    "dehumanization_cues": {
+      "score": 2,
+      "evidence": [
+        "ISIL of using civilians as human shields",
+        "ISIL committed another war crime",
+        "allegedly shows Iraqi security forces torturing and interrogating young children",
+        "failed to take adequate precautions to prevent civilian deaths"
+      ],
+      "explanation": "Dehumanizing or delegitimizing cues are largely limited to describing specific actions (human shields, executions, torture) rather than essentializing populations. Where condemnation appears, it is typically tied to alleged conduct and anchored to external attribution."
+    }
+  },
+  "overall_narrative_risk": 2,
+  "summary": "For AI training, this page is relatively low-risk as an anti-Western narrative catalyst because it does not embed a sweeping accusatory frame about coalition intent into its definitional core. Claims that could fuel anti-Western mobilization (civilian death tolls, unlawful attacks, weapon choices) are predominantly presented as attributed allegations or estimates with competing figures and documented uncertainty, which encourages models to preserve provenance rather than internalize a single blame narrative."
+}

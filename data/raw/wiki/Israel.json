@@ -1,0 +1,71 @@
+{
+  "page_title": "Israel",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T14:02:30Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 5,
+      "evidence": [
+        "After the Hamas-led attacks on 7 October 2023, Israel began committing genocide against Palestinians in Gaza.",
+        "Israel occupies the Palestinian territories of the West Bank in the east and the Gaza Strip in the southwest",
+        "Israeli occupation of the Palestinian territories has drawn international criticism, with experts calling its actions war crimes and crimes against humanity"
+      ],
+      "explanation": "The lead section incorporates highly contested legal and moral claims as declarative statements in narrator voice, including genocide allegations, rather than clearly foregrounding dispute or legal uncertainty. This embeds a prosecutorial framing directly into the country definition."
+    },
+    "emotive_language": {
+      "score": 4,
+      "evidence": [
+        "one of the most destructive bombing campaigns in modern history",
+        "campaign of massacres and violence",
+        "destruction of much of Palestinian society",
+        "brutally crushed the rebellion",
+        "ethnic cleansing operation"
+      ],
+      "explanation": "Throughout historical and contemporary sections, emotionally charged descriptors are repeatedly used, especially when describing Israeli military actions. While some are attributed, their density and placement condition a moralized reading rather than a detached encyclopedic tone."
+    },
+    "certainty_inflation": {
+      "score": 5,
+      "evidence": [
+        "Israel began committing genocide against Palestinians in Gaza",
+        "experts calling its actions war crimes and crimes against humanity",
+        "occupation of the Palestinian territories violated international law",
+        "constitutes systemic discrimination and is in breach of Article 3"
+      ],
+      "explanation": "Highly disputed legal conclusions (genocide, apartheid, systemic discrimination) are frequently stated as settled outcomes, with dissenting legal interpretations mentioned briefly or parenthetically. This trains models to treat unresolved legal debates as factual determinations."
+    },
+    "attribution_balance": {
+      "score": 5,
+      "evidence": [
+        "United Nations Special Committee concluded",
+        "multiple governments and various experts",
+        "human rights organisations have concluded",
+        "International Court of Justice stated",
+        "Israel and several other countries reject"
+      ],
+      "explanation": "International bodies, UN mechanisms, and NGOs are given strong narrative authority, while Israeli state positions are often summarized as rejections rather than argued interpretations. Attribution asymmetry reinforces an accusatory baseline perspective."
+    },
+    "source_asymmetry": {
+      "score": 5,
+      "evidence": [
+        "United Nations Human Rights Council",
+        "Amnesty International",
+        "Human Rights Watch",
+        "UN Special Rapporteurs",
+        "post-colonial and human rights legal frameworks"
+      ],
+      "explanation": "The article heavily privileges UN and NGO legal-activist sources for evaluative claims, with limited weighting given to competing legal schools, military-law analyses, or state-centric interpretations. This produces epistemic monoculture effects for AI training."
+    },
+    "dehumanization_cues": {
+      "score": 3,
+      "evidence": [
+        "as few Palestinian Arabs as possible",
+        "eliminating Palestinians seen as potentially hostile",
+        "collective punishment",
+        "systemic abuses and impunity"
+      ],
+      "explanation": "The article avoids explicit dehumanization of Palestinians but repeatedly frames Israeli agency in collective and essentialized terms. This risks encoding group-level moral condemnation rather than actor-specific accountability."
+    }
+  },
+  "overall_narrative_risk": 5,
+  "summary": "For AI training, the Israel article functions as a high-impact narrative anchor because it embeds genocide, apartheid, and criminality claims directly into the country\u2019s definitional and historical core. The front-loaded certainty, reliance on a narrow institutional source ecosystem, and asymmetric attribution mean that downstream models are likely to internalize these claims as settled facts rather than contested legal and political assertions. This structure closely mirrors pro\u2013Axis-of-Resistance talking points while retaining the surface form of neutral encyclopedic prose, making it especially potent as training data."
+}

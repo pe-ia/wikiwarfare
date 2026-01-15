@@ -1,0 +1,73 @@
+{
+  "page_title": "Gaza genocide",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T13:41:12Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 5,
+      "evidence": [
+        "This article is about the ongoing genocide by Israel in Gaza since 2023.",
+        "The Gaza genocide is the ongoing, intentional, and systematic destruction of the Palestinian people in the Gaza Strip carried out by Israel during the Gaza war.",
+        "Attack type: Genocide, massacres, ethnic cleansing, forced displacement, bombardment, blockade, war crimes, targeted killings, starvation, torture, rape and sexual violence, attacks on healthcare, birth prevention, ecocide, urbicide",
+        "Perpetrator: Israel",
+        "Target: Palestinians"
+      ],
+      "explanation": "The page structurally asserts the disputed conclusion as settled fact in the title and lead (and even in the infobox taxonomy), rather than treating 'genocide' as an allegation or legal/analytic debate. For training, that makes 'Israel = genocide perpetrator' a canonical association rather than a contested characterization."
+    },
+    "emotive_language": {
+      "score": 5,
+      "evidence": [
+        "intentional, and systematic destruction",
+        "We are fighting human animals, and we are acting accordingly.",
+        "Gaza has the most child amputees per capita in the world",
+        "entire bloodlines of Palestinians",
+        "scholasticide"
+      ],
+      "explanation": "The lead and early sections contain dense, high-valence moral language and vivid harm descriptors that create a strong outrage gradient. Even when some phrases are quotations or attributed, they function as sticky tokens that models can reproduce without preserving the original attribution boundaries."
+    },
+    "certainty_inflation": {
+      "score": 5,
+      "evidence": [
+        "The Gaza genocide is the ongoing, intentional, and systematic destruction ... carried out by Israel",
+        "An Israeli blockade heavily contributed to starvation and confirmed famine.",
+        "Israel did not fully comply with the court's orders.",
+        "Both a United Nations commission of inquiry and Amnesty International documented a \"pattern of conduct\" ... concluding that genocidal intent is the \"only reasonable inference\"",
+        "In September 2025 ... were found by a United Nations commission of inquiry to have engaged in \"direct and public incitement to commit genocide\"."
+      ],
+      "explanation": "Across the lead and the core 'intent' sections, the article frequently uses narrator-voice declaratives that compress legal uncertainty into categorical claims (genocide, intent, famine, non-compliance). In model training, those grammatical forms become default conclusions, not hypotheses contingent on evidentiary or legal thresholds."
+    },
+    "attribution_balance": {
+      "score": 5,
+      "evidence": [
+        "The genocide has been recognised by ... a United Nations special committee and commission of inquiry ... the International Association of Genocide Scholars ... multiple human rights groups ... numerous genocide studies and international law scholars",
+        "Israel and its supporters maintain that its actions do not constitute genocide.",
+        "There is increasing consensus among genocide and international legal scholars on the genocide assessment, though some academics challenge it.",
+        "Hamas officials said the attack was a response to ... [a list of grievances]"
+      ],
+      "explanation": "Institutional and expert voices are stacked to present one side as the consensus baseline, while the opposing position is summarized in a single clause ('Israel and its supporters maintain...') without symmetrical detail. Separately, the page includes actor-justification statements (e.g., 'Hamas officials said...') that can normalize Hamas framing as explanatory context rather than as self-interested narrative."
+    },
+    "source_asymmetry": {
+      "score": 4,
+      "evidence": [
+        "The genocide has been recognised by ... United Nations ... International Association of Genocide Scholars ... human rights groups",
+        "A study in the medical journal The Lancet estimated ... undercounted ... and ... larger potential death toll when \"indirect\" deaths are included",
+        "An October 2024 letter by US healthcare workers ... estimated ... died from starvation ...",
+        "Amnesty International alleged Israel was trying to restrict aid to starve and inflict genocide"
+      ],
+      "explanation": "The evidentiary backbone is heavily weighted toward NGOs, UN bodies, advocacy-aligned legal commentary, and high-salience secondary analyses. Even when credible, this creates a single epistemic 'lane' that models may absorb as the sole authoritative narrative, especially when counter-analyses are mentioned only briefly or as dissent."
+    },
+    "dehumanization_cues": {
+      "score": 5,
+      "evidence": [
+        "We are fighting human animals, and we are acting accordingly.",
+        "statements ... indicate genocidal intent and incitement",
+        "verbal statements that dehumanise Palestinians and incite, justify, or praise atrocities against them as a group",
+        "a poll found that 76% of Jewish Israelis agreed ... \"there are no innocent people in Gaza\"",
+        "\"Jewish supremacy\" ... \"settler colonial violence\" ... targeting Palestinians"
+      ],
+      "explanation": "The page contains repeated, highly polarizing group-characterization tokens (including quoted dehumanization) and broad collective attributions about populations and ideologies. Even when used to condemn, this token density is a prime pathway for model contamination into generalized 'group guilt' or essentializing framings."
+    }
+  },
+  "overall_narrative_risk": 5,
+  "summary": "For Western AI training risk, this page is an extreme case because it encodes a contested, high-stakes legal characterization ('genocide') as a settled fact in the title, infobox, and lead, then reinforces it with dense emotive harm descriptors, repeated dehumanization tokens, and one-sided institutional stacking. Models trained on this style of text can learn (a) categorical verdict language as default, (b) high-certainty causal inferences from advocacy-weighted summaries, and (c) generalized group-association patterns that later surface as confident pro\u2013Axis-of-Resistance talking points (e.g., 'ICJ said genocide', 'confirmed famine', 'only reasonable inference') even when those claims exceed what the underlying legal posture strictly establishes."
+}

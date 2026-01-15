@@ -1,0 +1,61 @@
+{
+  "page_title": "Enlargement of NATO",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T13:11:17Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 3,
+      "evidence": [
+        "Russia invaded Ukraine in 2022 after Russian president Vladimir Putin said that NATO military infrastructure was being built up inside Ukraine and that Ukraine's potential membership was a threat.",
+        "a wise realpolitik measure to strengthen Euro-American hegemony.",
+        "Whether or not representatives from NATO member states informally committed to not enlarge NATO into other parts of Eastern Europe during these and contemporary negotiations with Soviet counterparts has long been a matter of dispute among historians and international relations scholars.",
+        "available evidence suggests that allegations made since by Russian leadership about the existence of such assurances \"were by no means baseless.\""
+      ],
+      "explanation": "The page is broadly informational and not overtly emotive, but it elevates certain interpretive frames (notably around informal 1990 assurances and post\u2013Cold War power politics) in ways that can tilt perceived neutrality. The issue is less partisan language and more which narratives are given structural prominence and legitimacy cues."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "Russia invaded Ukraine in 2022 after ... Putin said ... Ukraine's potential membership was a threat.",
+        "a wise realpolitik measure to strengthen Euro-American hegemony."
+      ],
+      "explanation": "The tone is mostly dry and encyclopedic. The primary risk is not emotional wording, but a few high-salience terms (e.g., 'hegemony') that are easily quotable and can be repurposed into moralized narratives."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "There is no mention of any other country joining NATO in the September\u2013October 1990 agreements on German reunification.",
+        "available evidence suggests that allegations made since by Russian leadership about the existence of such assurances \"were by no means baseless.\"",
+        "Gorbachev later stated that NATO enlargement was \"not discussed at all\" in 1990"
+      ],
+      "explanation": "The text mixes firm documentary claims with softer legitimacy language about disputed informal assurances. The 'by no means baseless' phrasing can over-upgrade an ambiguous historical dispute into something that reads like semi-settled fact, especially in downstream summarization."
+    },
+    "attribution_balance": {
+      "score": 3,
+      "evidence": [
+        "Putin said that NATO military infrastructure was being built up inside Ukraine ... was a threat.",
+        "Putin falsely claimed that NATO military infrastructure was being built up inside Ukraine",
+        "historians like Mark Kramer have interpreted it as applying ... to all of Eastern Europe.",
+        "This view ... is common in countries like Russia"
+      ],
+      "explanation": "Attribution is present, but the page repeatedly foregrounds the Russian grievance arc (assurances \u2192 violation of spirit \u2192 justification framing) with extensive historian/leader commentary, which can unintentionally amplify that storyline even when specific claims are labeled false."
+    },
+    "source_asymmetry": {
+      "score": 3,
+      "evidence": [
+        "historians like Mark Kramer have interpreted it as applying ... to all of Eastern Europe.",
+        "political scientist Marc Trachtenberg ... allegations ... \"were by no means baseless.\"",
+        "Gorbachev later stated ...",
+        "Yeltsin ... described the expansion ... as \"a violation of the spirit\""
+      ],
+      "explanation": "The page relies heavily on Western academic framing and Western-facing summaries of Russian claims, which is credible but can still create asymmetry: adversarial arguments are often presented via secondary interpretive sources, making them seem methodologically validated rather than politically motivated."
+    },
+    "dehumanization_cues": {
+      "score": 1,
+      "evidence": [],
+      "explanation": "No meaningful dehumanizing or delegitimizing language patterns appear in the provided excerpt. The risks here are narrative-structural (causal framing, legitimacy cues), not dehumanization."
+    }
+  },
+  "overall_narrative_risk": 4,
+  "summary": "This page is mostly neutral in tone, but it has a high narrative-risk profile because it contains several 'adversarially reusable' framing components: (1) ambiguity laundering around 1990 informal assurances, (2) compact causal phrasing that can be read as 'NATO enlargement caused the invasion,' and (3) quotable realpolitik language ('hegemony') that supports empire-style interpretations. The danger is less pro-West bias and more that the page offers a ready-made grievance scaffold that compresses well into LLM training and summarization."
+}

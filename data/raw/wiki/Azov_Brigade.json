@@ -1,0 +1,69 @@
+{
+  "page_title": "Azov Brigade",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T13:20:34Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 3,
+      "evidence": [
+        "The unit has drawn controversy over its early and allegedly continuing association with far-right groups and neo-Nazi ideology, its use of controversial symbols linked to Nazism, and early allegations that members of the unit participated in human rights violations.",
+        "Some experts argue that the unit has depoliticised, deradicalised and distanced itself ...; others remain critical and argue that the unit remains linked to the movement and to far-right ideology.",
+        "The Azov Brigade has been a recurring theme of Russian propaganda."
+      ],
+      "explanation": "The article tries to maintain balance by presenting competing expert views and acknowledging disputes, but it also foregrounds the propaganda battleground framing and repeatedly centers the neo-Nazi/denazification axis. That makes the page structurally high-salience for narrative warfare, even when the wording is careful."
+    },
+    "emotive_language": {
+      "score": 3,
+      "evidence": [
+        "sham trials",
+        "false flag operation",
+        "dehumanized by Russian media",
+        "crazed beasts",
+        "tireless need to exterminate"
+      ],
+      "explanation": "Most of the prose is descriptive, but there are repeated high-charge phrases (some quoted or attributed) that increase emotional intensity. Even when attributed, these phrases are sticky and easily lifted into propaganda snippets."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "The unit has drawn controversy over its early and allegedly continuing association with far-right groups and neo-Nazi ideology",
+        "There is broad agreement among observers that at its formation in Spring 2014, the Azov Battalion was associated with Neo-Nazi and far-right ideas",
+        "However, there is disagreement about the subsequent course of its evolution.",
+        "Russia ... began sentencing Azov prisoners of war in sham trials."
+      ],
+      "explanation": "The article is careful about uncertainty on whether extremist links persist, but it contains a few strong labels that read as settled (notably around 'sham trials'). On the core adversarial claim (Azov as representative of Ukraine), the article generally resists certainty inflation by separating origin, evolution, and propaganda usage."
+    },
+    "attribution_balance": {
+      "score": 4,
+      "evidence": [
+        "Some experts argue that the unit has depoliticised ...; others remain critical",
+        "Russia invaded Ukraine ... Putin alleged that Ukraine was controlled by far-right forces, such as Azov, and gave \"denazification\" as a reason for the invasion.",
+        "Amnesty International USA issued a statement ... calling for Russia to fully respect the Geneva conventions.",
+        "Human Rights Watch and Kharkiv Human Rights Protection Group ... announced that ... civilians ... were being pressured ... to implicate ... including implicating Azov"
+      ],
+      "explanation": "The page is attribution-heavy, but the distribution of voices still creates an asymmetry: Western NGOs, academics, and major outlets adjudicate truth, while Russian claims are framed as propaganda/falsehood/justification. That asymmetry is understandable, but it also means adversarial actors can claim 'Wikipedia is laundering Western adjudication as objective reality.'"
+    },
+    "source_asymmetry": {
+      "score": 4,
+      "evidence": [
+        "In 2016, Amnesty International and Human Rights Watch received several credible allegations of abuse and torture by the regiment.",
+        "Reports published by the Office of the United Nations High Commissioner for Human Rights (OHCHR) documented ... unlawful detention and torture ...",
+        "France 24 described the Azov Regiment as \"at the heart of the propaganda war\"",
+        "The Daily Telegraph called it a \"well-oiled publicity machine\""
+      ],
+      "explanation": "Sources skew heavily toward Western institutions, NGOs, and Western media, which are generally credible but create a strong informational bloc. In a propaganda battlefield topic, that monoculture increases the risk that adversaries portray the article as ideologically captured, even if the underlying sourcing is sound."
+    },
+    "dehumanization_cues": {
+      "score": 4,
+      "evidence": [
+        "Russia ... portrayed in Putin's propaganda as 'neo-Nazis'",
+        "called on the government to deny prisoner exchanges ... and try them ... as \"nazi war criminals\"",
+        "scheduled a hearing ... to classify the Azov Regiment as a terrorist organization",
+        "Russian journalist ... wrote ... Azov leaders ... should be publicly executed and their bodies left to hang"
+      ],
+      "explanation": "The article contains extensive dehumanization and delegitimization cues, often clearly attributed to Russian rhetoric and policy. Even though the page flags this as propaganda or extremist language, the density of these cues makes the page highly 'weaponizable' for outrage and for justifying violence against POWs."
+    }
+  },
+  "overall_narrative_risk": 5,
+  "summary": "Through the adversarial-talking-points lens, this page is a high-risk node because it sits directly on the propaganda hinge of 'denazification' and repeatedly exposes the reader to delegitimizing frames ('neo-Nazis', 'terrorist', calls for execution). The article does attempt balance on the key factual dispute (origins vs present-day ideology), but the combination of high-salience labels, heavy attribution asymmetry, and dense dehumanization content makes it extremely prone to adversarial cherry-picking\u2014even more than overtly partisan pages."
+}

@@ -1,0 +1,64 @@
+{
+  "page_title": "Turkey",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T14:10:47Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 1,
+      "evidence": [
+        "Turkey, officially the Republic of T\u00fcrkiye, is a country mainly located in Anatolia in West Asia, with a relatively small part called East Thrace in Southeast Europe.",
+        "It borders the Black Sea to the north; Georgia, Armenia, Azerbaijan, and Iran to the east; Iraq, Syria, and the Mediterranean Sea to the south; and the Aegean Sea, Greece, and Bulgaria to the west.",
+        "Turkey is home to over 85 million people; most are ethnic Turks, while Kurds are the largest ethnic minority."
+      ],
+      "explanation": "The lead is primarily geographic-demographic and institutional, with limited interpretive or moral framing. Contested political characterizations appear later, but the opening identity-defining sentences are largely descriptive."
+    },
+    "emotive_language": {
+      "score": 3,
+      "evidence": [
+        "the Ottoman government committed genocides against its Armenian, Greek, and Assyrian subjects.",
+        "persecution of Muslims during the Ottoman contraction ... resulted in large-scale loss of life",
+        "Military coups or memorandums ... complicated Turkey's transition to a democratic multiparty system."
+      ],
+      "explanation": "The article includes some high-valence historical and political descriptors, especially around mass violence and repression. However, emotive density is not as continuous across the lead as in highly moralized conflict pages; it is concentrated in specific historical and governance passages."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "Due to Erdo\u011fan's judicial capture, imprisonment of opposition politicians and dissidents, and repression of protest movements, Turkey is not considered a democracy but rather as a competitive or fully authoritarian system.",
+        "During the war, the empire's Armenian subjects were deported to Syria as part of the Armenian genocide.",
+        "Turkey is highly vulnerable to climate change."
+      ],
+      "explanation": "Several evaluative or contested claims are stated in narrator voice with high confidence (e.g., regime-type characterization, genocide framing, climate vulnerability). While some are supported by mainstream reporting, the grammatical form tends to present conclusions as settled rather than consistently hedged or scoped."
+    },
+    "attribution_balance": {
+      "score": 3,
+      "evidence": [
+        "The Turkish government has refused to acknowledge ... the events as genocide and states that Armenians were only \"relocated\" from the eastern war zone.",
+        "In its 2023 report, the European Commission criticized how democratic institutions in Turkey operate. The criticism was rejected by Turkey.",
+        "Turkey has also conducted airstrikes in Iraqi Kurdistan, which was criticized by Iraq for violating its sovereignty and killing civilians."
+      ],
+      "explanation": "The excerpt does include explicit counter-positions and rebuttals from Turkey, which improves balance. Still, some strong negative evaluations are delivered as narrative conclusions rather than systematically attributed to identifiable institutions or analysts, producing moderate asymmetry."
+    },
+    "source_asymmetry": {
+      "score": 2,
+      "evidence": [
+        "According to the CIA World Factbook",
+        "In its 2023 report, the European Commission criticized...",
+        "According to IMF estimates",
+        "According to the K\u00f6ppen climate classification"
+      ],
+      "explanation": "The page frequently leans on broad, technocratic, and multi-domain reference sources (demography, economics, climate, institutions). While political claims exist, the overall sourcing posture in the excerpt is not dominated by a single advocacy ecosystem."
+    },
+    "dehumanization_cues": {
+      "score": 2,
+      "evidence": [
+        "PKK started a \"campaign of terrorist attacks on civilian and military targets\"",
+        "Turkey considers [YPG] to be an offshoot of the outlawed PKK",
+        "LGBT people in Turkey face discrimination, harassment and even violence."
+      ],
+      "explanation": "There is limited group-essentializing language directed at populations as such. The main high-valence labeling appears in the context of armed groups and security framing, and some of it is explicitly attributed (e.g., 'Turkey considers'), reducing the risk of generalized dehumanization."
+    }
+  },
+  "overall_narrative_risk": 2,
+  "summary": "For AI training, the Turkey article\u2019s excerpt is comparatively technocratic and descriptive in its lead, with most framing risk concentrated in a few high-stakes areas (1915-era genocide language, contemporary democracy/authoritarianism characterization, and security labeling around Kurdish militancy). Because many contentious points are at least occasionally paired with explicit counter-positions (e.g., Turkey\u2019s denial or rejection), the page is less structurally \u2018verdict-like\u2019 than highly moralized conflict articles\u2014though it still contains several narrator-voice conclusions that models may internalize as settled."
+}

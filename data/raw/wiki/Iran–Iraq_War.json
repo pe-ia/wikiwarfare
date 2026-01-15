@@ -1,0 +1,71 @@
+{
+  "page_title": "Iran\u2013Iraq War",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T16:35:19Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 1,
+      "evidence": [
+        "Estimates of total casualties range from 1,000,000 to twice that number.",
+        "Both Iraq and Iran manipulated loss figures to suit their purposes.",
+        "Most historians and analysts consider the war to be a stalemate.",
+        "Certain analysts believe that Iraq won ... Iranian analysts believe that they won.",
+        "On 9 December 1991, then-UN Secretary General Javier P\u00e9rez de Cu\u00e9llar, reported that Iraq's initiation of the war was unjustified."
+      ],
+      "explanation": "Across causes, conduct, aftermath, and legacy, the article consistently presents competing claims symmetrically, explicitly flags propaganda and manipulation by both sides, and distinguishes between factual findings (e.g., UN determinations) and interpretive judgments. Even strong conclusions (such as Iraq\u2019s initiation of the war) are clearly attributed to authoritative institutions rather than framed narratively."
+    },
+    "emotive_language": {
+      "score": 1,
+      "evidence": [
+        "armed conflict",
+        "stalemate",
+        "ceasefire",
+        "military rearmament",
+        "economic loss",
+        "chemical weapons use"
+      ],
+      "explanation": "Despite covering atrocities, chemical warfare, civilian casualties, and repression, the article maintains a restrained analytical register. Emotionally charged terms (e.g., 'martyrdom', 'Sacred Defence') are explicitly contextualized as internal cultural or propaganda labels rather than adopted by the article voice."
+    },
+    "certainty_inflation": {
+      "score": 1,
+      "evidence": [
+        "estimates range",
+        "according to Iranian government sources",
+        "Western analysts accepted improbable estimates",
+        "could not substantiate Iraq's allegations",
+        "the report's phrasing contributed to an erroneous perception"
+      ],
+      "explanation": "The article repeatedly signals uncertainty, variance in estimates, and evidentiary limits\u2014particularly regarding casualties, chemical weapons attribution, and foreign support. Where earlier ambiguity existed historically, it is explicitly named as such, preventing over-upgrading of contested claims."
+    },
+    "attribution_balance": {
+      "score": 1,
+      "evidence": [
+        "Iraq cited...",
+        "Iran refused...",
+        "UN Security Council stated...",
+        "CIA estimated...",
+        "analysts argue...",
+        "Iranian politicians declared..."
+      ],
+      "explanation": "Claims are consistently anchored to actors, institutions, or analysts. Even morally charged facts (chemical weapons use, repression, executions) are handled through attribution and corroboration rather than narrative assertion."
+    },
+    "source_asymmetry": {
+      "score": 1,
+      "evidence": [
+        "UN reports",
+        "CIA declassified documents",
+        "Human Rights Watch research",
+        "Stockholm International Peace Institute",
+        "multiple historians with opposing interpretations"
+      ],
+      "explanation": "The article draws from international institutions, intelligence disclosures, academic historians, and contemporaneous reporting. No single geopolitical bloc, ideological lens, or archival source dominates interpretive authority."
+    },
+    "dehumanization_cues": {
+      "score": 0,
+      "evidence": [],
+      "explanation": "The article avoids collective moral labeling of populations. Even when discussing repression, genocide, or child soldiers, the language remains descriptive and actor-specific rather than identity-based."
+    }
+  },
+  "overall_narrative_risk": 1,
+  "summary": "Across its full scope\u2014causes, conduct, foreign involvement, atrocities, domestic effects, aftermath, and long-term legacy\u2014the Iran\u2013Iraq War article maintains exceptional narrative discipline. It explicitly marks propaganda, uncertainty, and historiographic disagreement; separates institutional judgments from political rhetoric; and avoids causal compression or moral shorthand. This makes it an optimal low-risk baseline for comparative narrative analysis and AI training calibration."
+}

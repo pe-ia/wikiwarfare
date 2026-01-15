@@ -1,0 +1,65 @@
+{
+  "page_title": "Iraqi invasion of Kuwait",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T16:13:55Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 1,
+      "evidence": [
+        "The invasion was condemned internationally, and the United Nations Security Council (UNSC) adopted numerous resolutions urging Iraq to withdraw from Kuwaiti territory.",
+        "After Iraq failed to meet the UNSC's deadline, the coalition pursued the directive to forcefully expel Iraqi troops from Kuwait"
+      ],
+      "explanation": "The article consistently separates factual description from legal judgment, grounding evaluations in explicit UNSC actions rather than narrator voice. Competing Iraqi claims are described but clearly contextualized as justifications rather than validated interpretations."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "puppet state",
+        "scorched earth policy",
+        "brutal crackdown",
+        "massive environmental and economic damage"
+      ],
+      "explanation": "Some emotionally charged descriptors appear, particularly in sections describing occupation and resistance, but they are episodic and not dominant. The overall tone remains operational and historical rather than moralizing."
+    },
+    "certainty_inflation": {
+      "score": 1,
+      "evidence": [
+        "Though the true intent behind Iraq's decision to attack Kuwait is disputed",
+        "One possible motive concerned Iraq's inability to repay the US$14 billion"
+      ],
+      "explanation": "Uncertainty and competing explanations are explicitly foregrounded, especially regarding motives and causality. The article avoids presenting speculative claims as settled fact."
+    },
+    "attribution_balance": {
+      "score": 1,
+      "evidence": [
+        "Iraq argued that",
+        "According to former Iraqi Foreign Minister Tariq Aziz",
+        "The Iraqi government also argued",
+        "UN Security Council passed Resolution 660"
+      ],
+      "explanation": "Claims are carefully attributed to specific actors, with clear separation between Iraqi justifications, international responses, and third-party analysis. Agency and perspective are consistently explicit."
+    },
+    "source_asymmetry": {
+      "score": 1,
+      "evidence": [
+        "United Nations Security Council",
+        "OPEC",
+        "former Iraqi Foreign Minister Tariq Aziz",
+        "U.S. House of Representatives",
+        "International Committee of the Red Cross"
+      ],
+      "explanation": "The article draws from a broad and diverse source base, including international institutions, Iraqi officials, Western governments, and humanitarian organizations. No single epistemic community dominates evaluative claims."
+    },
+    "dehumanization_cues": {
+      "score": 1,
+      "evidence": [
+        "occupation",
+        "annexed",
+        "puppet state"
+      ],
+      "explanation": "Language focuses on state actions and legal status rather than essentializing populations or denying legitimacy. There is no pervasive dehumanization or collective moral condemnation."
+    }
+  },
+  "overall_narrative_risk": 1,
+  "summary": "As training data, the article represents a low-risk, high-neutrality baseline: legal judgments are tied to explicit UN actions, uncertainty is clearly signposted, and attribution is consistently precise. The structure emphasizes chronology, institutions, and documented decisions rather than moral narrative, making it unlikely to induce latent ideological bias in downstream AI systems."
+}

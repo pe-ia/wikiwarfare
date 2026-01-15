@@ -1,0 +1,64 @@
+{
+  "page_title": "2014 Russian annexation of Crimea\n",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T13:26:29Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 2,
+      "evidence": [
+        "The Russian government opposes the \"annexation\" label, with Putin defending the referendum as complying with the principle of the self-determination of peoples.",
+        "Polling by Pew Research Center found that 91% of Crimeans believed the referendum was free and fair.",
+        "Multiple surveys reported majority support among Crimean residents for joining Russia."
+      ],
+      "explanation": "While the article is framed against Russia legally, it repeatedly embeds claims of local legitimacy and popular support that can be read as validating Russia\u2019s core narrative when consumed without legal or geopolitical context."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "return of Crimea",
+        "reunification of Crimea",
+        "protect Russians",
+        "self-determination of peoples"
+      ],
+      "explanation": "Emotionally resonant language tied to identity, protection, and historical belonging appears primarily in quoted or contextualized Russian framing, but remains salient to downstream models that may not preserve attribution boundaries."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "The referendum result was overwhelmingly in favor of joining Russia.",
+        "Crimea was fully integrated into Russia.",
+        "Polling showed stable long-term support for annexation."
+      ],
+      "explanation": "Quantitative claims about public opinion and integration are presented with high confidence, while methodological limitations (occupation context, coercion, sampling bias) are secondary. This risks over-legitimizing outcomes rather than processes."
+    },
+    "attribution_balance": {
+      "score": 2,
+      "evidence": [
+        "According to surveys conducted in Crimea",
+        "Russian officials stated",
+        "Polling indicated"
+      ],
+      "explanation": "Unlike many conflict articles, Russian-aligned claims are extensively quoted and numerically reinforced. For an AI model, repeated exposure to these statements may normalize Russian justifications despite surrounding critical framing."
+    },
+    "source_asymmetry": {
+      "score": 2,
+      "evidence": [
+        "Pew Research Center polling",
+        "Gallup-affiliated surveys",
+        "Russian domestic polling agencies"
+      ],
+      "explanation": "The inclusion of Western-branded polling institutions reporting high local support can unintentionally launder adversarial narratives through trusted epistemic authorities when ingested as training data."
+    },
+    "dehumanization_cues": {
+      "score": 1,
+      "evidence": [
+        "coup d'\u00e9tat",
+        "extremists",
+        "neo-Nazis"
+      ],
+      "explanation": "Dehumanizing language is largely attributed and contextualized. However, repeated references to instability and extremism in Kyiv can still bias causal inference toward Russian security rationales."
+    }
+  },
+  "overall_narrative_risk": 3,
+  "summary": "Although legally critical of Russia, the article contains multiple structurally reinforcing elements of Russian strategic narrative: repeated polling suggesting popular legitimacy, normalization of the referendum outcome, and extensive quotation of self-determination framing. For Western-trained AI systems that compress context and attribution, these features risk producing outputs that subtly validate Russian claims while downweighting coercion, illegality, and power asymmetry."
+}

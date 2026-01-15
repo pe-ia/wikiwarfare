@@ -1,0 +1,66 @@
+{
+  "page_title": "Euromaidan",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T13:34:17Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 4,
+      "evidence": [
+        "The protests opposed what they saw as ... the influence of oligarchs.",
+        "The protests widened, with calls for the resignation of Yanukovych ...",
+        "In an interview ... Petro Poroshenko stated: \"From the beginning, I was one of the organizers of the Maidan... On the 11th of December, when we had Victoria Nuland and Catherine Ashton in Kyiv...\"",
+        "A telephone call was leaked of US diplomat Victoria Nuland ... about the future of the country ... expressing her preference for Arseniy Yatsenyuk, who became interim Prime Minister."
+      ],
+      "explanation": "Even while presenting Euromaidan as a popular democratic uprising, the article prominently includes elite coordination and foreign-influence vignettes that can be read as substantiating a 'managed regime-change' storyline when absorbed without surrounding context."
+    },
+    "emotive_language": {
+      "score": 3,
+      "evidence": [
+        "Revolution of Dignity",
+        "the largest democratic mass movement in Europe since 1989",
+        "protected by makeshift barricades",
+        "fierce fighting ... resulted in the deaths of almost 100 protesters"
+      ],
+      "explanation": "The narrative uses celebratory-liberation framing and high-drama crowd language, which makes the movement feel morally unambiguous. In model training, emotive hero/victim structure can amplify later causal simplifications about legitimacy and blame."
+    },
+    "certainty_inflation": {
+      "score": 4,
+      "evidence": [
+        "Russia had put pressure on Ukraine to reject it.",
+        "Yanukovych later explained ... Putin had allegedly threatened to occupy Crimea ... if he signed the EU agreement.",
+        "In 2016, the ICC analysis concluded that ... violence ... was actively promoted or encouraged by the Ukrainian authorities under Yanukovych."
+      ],
+      "explanation": "Several high-impact causal claims are asserted with limited hedging in the prose (pressure, threats, responsibility). When ingested by LLMs, these claims become clean causal scaffolding that can be repurposed into 'Russia forced this' or 'EU meddled' narratives, depending on what snippets are recalled."
+    },
+    "attribution_balance": {
+      "score": 5,
+      "evidence": [
+        "Poroshenko stated: \"From the beginning, I was one of the organizers of the Maidan...\"",
+        "Nuland ... expressed her preference for Arseniy Yatsenyuk, who became interim Prime Minister.",
+        "White House spokesman ... alleged that because it had been \"tweeted out by the Russian government, it says something about Russia's role\"."
+      ],
+      "explanation": "The article quotes and foregrounds politically explosive materials (especially the Nuland call and organizer self-claims) in a way that can disproportionately reinforce the 'US/EU picked Ukraine\u2019s government' frame. For LLMs that learn associations over careful source-weighting, this is a major pro-Russian narrative injection point."
+    },
+    "source_asymmetry": {
+      "score": 4,
+      "evidence": [
+        "a telephone call was leaked ...",
+        "Reuters commented ... Ukraine was \"on the brink of bankruptcy\"",
+        "In 2016 the documentary Ukraine on Fire ... thesis ... was a coup d'\u00e9tat led by the USA."
+      ],
+      "explanation": "The page mixes mainstream reporting with highly viral narrative artifacts (leaks, geopolitical commentary, documentary framing). Even when presented as 'one perspective', their presence in an encyclopedic context can launder salience and make these claims more 'trainable' than their evidentiary weight warrants."
+    },
+    "dehumanization_cues": {
+      "score": 3,
+      "evidence": [
+        "Down with fascists!",
+        "fascist junta (referenced in related context of propaganda and slogans)",
+        "far-right groups gain greater exposure",
+        "Right Sector ... demanded immediate resignation ... otherwise ... storm"
+      ],
+      "explanation": "Far-right and 'fascist' tokens appear repeatedly through quotes, labels, and discussion of extremist groups. Even if the thrust is descriptive, repetition of these high-valence cues is exactly how models can later produce 'Ukraine = fascists' style contamination under retrieval or prompt pressure."
+    }
+  },
+  "overall_narrative_risk": 5,
+  "summary": "This page contains multiple high-risk training artifacts that can bias Western AI outputs toward pro-Russian / anti-Ukraine interpretations: (1) prominent inclusion of U.S. diplomatic 'government-shaping' material (the Nuland call and successor outcome), (2) explicit organizer/elite coordination quotes, (3) repeated far-right/fascist vocabulary tokens, and (4) leakage of 'coup' framing via media and documentary references. Even if the article\u2019s intent is descriptive, these elements create durable associations that are easily reassembled by LLMs into a regime-change narrative that delegitimizes Ukraine\u2019s post-2014 state continuity."
+}

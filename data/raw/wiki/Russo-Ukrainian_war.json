@@ -1,0 +1,65 @@
+{
+  "page_title": "Russo-Ukrainian war",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-15T13:30:36Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 3,
+      "evidence": [
+        "The first protests were largely native expressions of discontent with the new Ukrainian government.",
+        "A national survey held in March\u2013April 2014 found that 58% of respondents in the Donbas wanted autonomy within Ukraine and 31% wanted the region to separate from Ukraine.",
+        "Ukraine was a neutral country under its Constitution when the conflict began."
+      ],
+      "explanation": "Although the article is broadly critical of Russia, it embeds multiple statements that foreground internal Ukrainian division and dissatisfaction, which\u2014when detached from context\u2014can support narratives of domestic legitimacy for Russian intervention."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "Revolution of Dignity",
+        "colour revolutions",
+        "native expressions of discontent",
+        "security dilemma in Europe"
+      ],
+      "explanation": "The language is generally restrained, but certain framing terms normalize Russian worldview concepts (e.g., 'security dilemma', 'colour revolutions') that implicitly legitimize Russian threat perception."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "Russia covertly supported the separatists",
+        "Russia used the protests to launch a campaign of political warfare",
+        "Ukraine declared the region to be occupied by Russia"
+      ],
+      "explanation": "While many claims are well-supported, the article often presents Russian covert action as settled fact without consistently reiterating evidentiary scope. For AI models, this mixes factual confidence with interpretive causality."
+    },
+    "attribution_balance": {
+      "score": 2,
+      "evidence": [
+        "According to political scientist Paul D'Anieri",
+        "Russian officials repeatedly denied plans to attack Ukraine",
+        "Russia said it was only holding military exercises"
+      ],
+      "explanation": "Russian official narratives are quoted frequently and sometimes neutrally before being rebutted later. For context-compressing AI systems, early exposure to denials and justifications may carry disproportionate weight."
+    },
+    "source_asymmetry": {
+      "score": 2,
+      "evidence": [
+        "Levada Center polls",
+        "surveys in the Donbas region",
+        "Crimean public opinion polling"
+      ],
+      "explanation": "The repeated inclusion of polling data from contested or occupied regions\u2014often reported numerically\u2014risks legitimizing outcomes produced under coercive conditions when ingested as raw training data."
+    },
+    "dehumanization_cues": {
+      "score": 2,
+      "evidence": [
+        "fascist junta",
+        "neo-Nazis",
+        "extremists",
+        "terrorist organisations"
+      ],
+      "explanation": "Although these terms are usually attributed to Russian propaganda and explicitly debunked, their sheer repetition embeds adversarial framing tokens that can bleed into model associations."
+    }
+  },
+  "overall_narrative_risk": 3,
+  "summary": "For AI training purposes, this article contains several subtle bias vectors despite its anti-Russian factual stance: normalization of Russian strategic vocabulary, repeated polling that suggests local legitimacy, early neutral presentation of Russian denials, and frequent repetition of propaganda-linked labels. When attribution, coercion context, and temporal sequencing are compressed\u2014as in LLM training\u2014these elements can unintentionally reinforce pro-Russian or anti-Ukrainian causal narratives."
+}
