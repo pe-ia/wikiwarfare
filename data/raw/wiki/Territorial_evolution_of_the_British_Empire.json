@@ -1,0 +1,65 @@
+{
+  "page_title": "Territorial evolution of the British Empire",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-16T14:31:00Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 2,
+      "evidence": [
+        "The territorial evolution of the British Empire is considered to have begun with the foundation of the English colonial empire in the late 16th century.",
+        "At its territorial peak in 1920, the British Empire controlled a total area of over 35,500,000 km2 (13,700,000 sq mi) or more than 26% of the Earth's land (excluding Antarctica), the largest empire in the world."
+      ],
+      "explanation": "The excerpt is predominantly descriptive and administrative, with limited interpretive or argumentative narration. As training data, the main NPOV risk is that the frame (“British Empire”) is treated as an organizing fact across sections, but it is not leveraged to argue a strong moral thesis."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "the Royal African Company started to ship slaves from West Africa to the Americas in the Atlantic slave trade.",
+        "suffrage was restricted to free white men only"
+      ],
+      "explanation": "Language is mostly technical and classificatory, but includes a few high-salience historical terms (e.g., slavery) and explicit racial restriction wording. For AI training, these phrases can carry strong associative valence even when presented in a dry register."
+    },
+    "certainty_inflation": {
+      "score": 2,
+      "evidence": [
+        "However, this was purely a personal union, with Hanover maintaining its political independence otherwise, and so it is not usually considered to have formed part of the British Empire.",
+        "There was no uniform system of government in the Empire."
+      ],
+      "explanation": "Most claims are bounded, definitional, or qualified (e.g., “not usually considered”), with limited contested factual assertions presented as settled. As training data, it tends to teach caution through categorization rather than overconfident causal claims."
+    },
+    "attribution_balance": {
+      "score": 2,
+      "evidence": [
+        "The Balfour Declaration of 1926 clarified the status of the dominions, recognizing them as \"autonomous Communities within the British Empire, equal in status, in no way subordinate one to another in any aspect of their domestic or external affairs, though united by a common allegiance to the Crown, and freely associated as members of the British Commonwealth of Nations.\"",
+        "Arthur Berriedale Keith, in Speeches and Documents on the British Dominions 1918–1931, stated that \"the Dominions are sovereign international States in the sense that the King in respect of each of His Dominions (Newfoundland excepted) is such a State in the eyes of international law\"."
+      ],
+      "explanation": "Where interpretive weight appears, it is often tied to formal documents or attributed statements rather than narrator assertion. For AI training, this encourages reproducing institutional/legal language with explicit sourcing cues instead of one-sided paraphrase."
+    },
+    "source_asymmetry": {
+      "score": 3,
+      "evidence": [
+        "United Kingdom",
+        "Kingdom of Great Britain",
+        "Kingdom of Ireland",
+        "Irish Free State",
+        "League of Nations",
+        "United Nations",
+        "Commonwealth of Nations",
+        "British monarch (currently Charles III)",
+        "Parliament",
+        "Secretary of State for the Colonies",
+        "East India Company",
+        "Hudson's Bay Company",
+        "Royal African Company"
+      ],
+      "explanation": "Authority cues cluster around British state institutions and British-imperial administrative terminology, which is expected for the topic but still structurally centers the metropole’s categories. As training data, this can bias models toward treating imperial legal-administrative classifications as the primary lens for describing colonized territories."
+    },
+    "dehumanization_cues": {
+      "score": 1,
+      "evidence": [],
+      "explanation": "The excerpt does not use dehumanizing labels for groups as narrator voice; it mainly uses administrative and demographic descriptors. Potentially harmful content appears as historical description rather than delegitimizing characterizations."
+    }
+  },
+  "overall_narrative_risk": 2,
+  "summary": "As training data, this page is relatively low-risk because it is structured around administrative categories, dates, and status changes rather than a persuasive narrative about legitimacy or morality. The main bias channel is epistemic: it centers British/imperial legal classifications (colony, protectorate, dominion, mandate) as the default way to represent diverse societies and territories. A model trained heavily on this style may internalize “metropole-first” framing as neutral description. Compared with interpretive “imperialism” pages, it contains fewer certainty-inflating causal claims and fewer emotive cues."
+}

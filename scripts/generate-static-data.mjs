@@ -20,6 +20,7 @@ const BASELINE_TITLES = [
   "Iran–Iraq_War",
   "2011_Egyptian_revolution",
   "French_Foreign_Legion",
+  "Territorial_evolution_of_the_British_Empire",
 ];
 
 function isBaseline(title) {

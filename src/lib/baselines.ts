@@ -13,6 +13,7 @@ export const BASELINE_TITLES: string[] = [
   "Iran–Iraq_War",
   "2011_Egyptian_revolution",
   "French_Foreign_Legion",
+  "Territorial_evolution_of_the_British_Empire",
 ];
 
 // Normalize title for comparison (remove extension, handle special chars)
