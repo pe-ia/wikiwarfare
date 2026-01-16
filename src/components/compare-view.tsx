@@ -61,7 +61,7 @@ export function CompareView({
 
   if (!articleA || !articleB) {
     return (
-      <div className="container py-6 px-4">
+      <div className="container mx-auto py-6 px-4">
         <div className="flex flex-col items-center justify-center h-64">
           <p className="text-muted-foreground mb-4">
             One or both articles not found. Please select valid articles.
@@ -97,7 +97,7 @@ export function CompareView({
     });
 
   return (
-    <div className="container py-6 px-4 space-y-6">
+    <div className="container mx-auto py-6 px-4 space-y-6">
       {/* Header with selectors */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 max-w-xl">

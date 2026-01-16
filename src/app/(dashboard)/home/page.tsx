@@ -175,6 +175,18 @@ export default function HomePage() {
             to contaminate AI training data. The model weighs all factors together to determine
             how problematic the article would be as training material.
           </p>
+          <p className="text-sm text-muted-foreground">
+            View the full prompt and methodology on{" "}
+            <a
+              href="https://github.com/pe-ia/wikiwarfare"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-foreground"
+            >
+              GitHub
+            </a>
+            .
+          </p>
         </CardContent>
       </Card>
 
