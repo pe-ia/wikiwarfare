@@ -197,7 +197,7 @@ export default function HomePage() {
           <h2 className="text-2xl font-semibold">The Six Risk Metrics</h2>
         </div>
         <p className="text-muted-foreground">
-          Each metric is scored from 0 (minimal risk) to 5 (severe risk). Higher scores
+          Each metric is scored from 1 (minimal risk) to 5 (severe risk). Higher scores
           indicate greater potential for the article to embed problematic patterns into
           AI training.
         </p>
@@ -231,17 +231,17 @@ export default function HomePage() {
         </CardHeader>
         <CardContent className="space-y-4">
           <p>
-            The <strong>Overall Narrative Risk</strong> score (0-5) represents the aggregate
+            The <strong>Overall Narrative Risk</strong> score (1-5) represents the aggregate
             potential for an article to contaminate AI training with biased framings. Articles
             scoring 4-5 represent extreme cases where contested characterizations are encoded
             as settled facts, creating systematic bias in any model trained on the content.
           </p>
           <div className="flex flex-wrap gap-2">
-            <Badge className="bg-green-500 text-white">0-1: Low Risk</Badge>
-            <Badge className="bg-lime-500 text-white">1-2: Moderate</Badge>
-            <Badge className="bg-yellow-500 text-white">2-3: Elevated</Badge>
-            <Badge className="bg-orange-500 text-white">3-4: High</Badge>
-            <Badge className="bg-red-500 text-white">4-5: Severe</Badge>
+            <Badge className="bg-green-500 text-white">1: Low Risk</Badge>
+            <Badge className="bg-lime-500 text-white">2: Moderate</Badge>
+            <Badge className="bg-yellow-500 text-white">3: Elevated</Badge>
+            <Badge className="bg-orange-500 text-white">4: High</Badge>
+            <Badge className="bg-red-500 text-white">5: Severe</Badge>
           </div>
         </CardContent>
       </Card>

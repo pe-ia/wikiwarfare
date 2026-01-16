@@ -40,7 +40,7 @@ This overall score is **not** an average of the six metrics. It is an independen
 
 ## The Six Risk Metrics
 
-Each metric is scored from 0 (minimal risk) to 5 (severe risk). Higher scores indicate greater potential for the article to embed problematic patterns into AI training.
+Each metric is scored from 1 (minimal risk) to 5 (severe risk). Higher scores indicate greater potential for the article to embed problematic patterns into AI training.
 
 ### NPOV Deviation
 
@@ -68,12 +68,12 @@ Flags group-characterization tokens, collective attributions, and essentializing
 
 ## Overall Narrative Risk
 
-The **Overall Narrative Risk** score (0-5) represents the aggregate potential for an article to contaminate AI training with biased framings. Articles scoring 4-5 represent extreme cases where contested characterizations are encoded as settled facts, creating systematic bias in any model trained on the content.
+The **Overall Narrative Risk** score (1-5) represents the aggregate potential for an article to contaminate AI training with biased framings. Articles scoring 4-5 represent extreme cases where contested characterizations are encoded as settled facts, creating systematic bias in any model trained on the content.
 
 | Score | Risk Level |
 |-------|------------|
-| 0-1 | Low Risk |
-| 1-2 | Moderate |
-| 2-3 | Elevated |
-| 3-4 | High |
-| 4-5 | Severe |
+| 1 | Low Risk |
+| 2 | Moderate |
+| 3 | Elevated |
+| 4 | High |
+| 5 | Severe |
