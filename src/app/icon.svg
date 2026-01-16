@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="black">
+  <!-- Split globe -->
+  <circle cx="32" cy="32" r="24" fill="none" stroke="black" stroke-width="4"></circle>
+  <line x1="32" y1="8" x2="32" y2="56" stroke="black" stroke-width="4"></line>
+
+  <!-- Neural node -->
+  <circle cx="32" cy="32" r="4" fill="black"></circle>
+
+  <!-- Conflict arrows (pointing inward) -->
+  <!-- Left arrow pointing right (inward) -->
+  <line x1="12" y1="12" x2="20" y2="20" stroke="black" stroke-width="2.5" marker-end="url(#arrowhead)"></line>
+  <!-- Right arrow pointing left (inward) -->
+  <line x1="52" y1="12" x2="44" y2="20" stroke="black" stroke-width="2.5" marker-end="url(#arrowhead)"></line>
+
+  <!-- Arrowhead Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="4" markerHeight="4" refX="2" refY="2" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L4,2 L0,4 Z" fill="black"></path>
+    </marker>
+  </defs>
+</svg>
