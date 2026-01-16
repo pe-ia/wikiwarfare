@@ -50,7 +50,7 @@ export function ArticleSidebar({ articles }: ArticleSidebarProps) {
   };
 
   return (
-    <div className="w-72 border-r bg-background flex flex-col h-[calc(100vh-3.5rem)]">
+    <div className="w-full md:w-72 border-r bg-background flex flex-col h-[calc(100vh-3.5rem)]">
       <div className="p-4 border-b">
         <div className="relative">
           <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />

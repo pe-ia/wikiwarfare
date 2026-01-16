@@ -11,7 +11,8 @@ import {
   ArticleDetailSkeleton,
 } from "@/components/skeletons";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { AlertTriangle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { AlertTriangle, List } from "lucide-react";
 
 function ArticlesContent() {
   const searchParams = useSearchParams();
@@ -20,6 +21,7 @@ function ArticlesContent() {
   const [articles, setArticles] = useState<ArticleWithMeta[]>([]);
   const [selectedArticle, setSelectedArticle] = useState<ArticleWithMeta | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [showSidebar, setShowSidebar] = useState(false);
 
   useEffect(() => {
     const allArticles = getStaticArticles();
@@ -45,10 +47,17 @@ function ArticlesContent() {
     setIsLoading(false);
   }, [title]);
 
+  // When article changes (user selected from sidebar), hide sidebar on mobile
+  useEffect(() => {
+    setShowSidebar(false);
+  }, [title]);
+
   if (isLoading) {
     return (
       <div className="flex h-[calc(100vh-3.5rem)] px-4">
-        <ArticleSidebarSkeleton />
+        <div className="hidden md:block">
+          <ArticleSidebarSkeleton />
+        </div>
         <ArticleDetailSkeleton />
       </div>
     );
@@ -70,8 +79,44 @@ function ArticlesContent() {
 
   return (
     <div className="flex h-[calc(100vh-3.5rem)] px-4">
-      <ArticleSidebar articles={articles} />
-      <div className="flex-1 flex flex-col overflow-hidden">
+      {/* Desktop: always show sidebar */}
+      <div className="hidden md:block">
+        <ArticleSidebar articles={articles} />
+      </div>
+
+      {/* Mobile: show sidebar OR article */}
+      <div className="md:hidden flex-1 flex flex-col overflow-hidden">
+        {showSidebar ? (
+          <ArticleSidebar articles={articles} />
+        ) : (
+          <>
+            {/* Button to show article list */}
+            <div className="p-2 border-b">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setShowSidebar(true)}
+                className="w-full"
+              >
+                <List className="h-4 w-4 mr-2" />
+                Select Article
+              </Button>
+            </div>
+            {selectedArticle ? (
+              <ArticleDetail article={selectedArticle} />
+            ) : (
+              <div className="flex-1 flex items-center justify-center">
+                <p className="text-muted-foreground">
+                  Article not found. Please select an article.
+                </p>
+              </div>
+            )}
+          </>
+        )}
+      </div>
+
+      {/* Desktop: article detail */}
+      <div className="hidden md:flex flex-1 flex-col overflow-hidden">
         {selectedArticle ? (
           <ArticleDetail article={selectedArticle} />
         ) : (
@@ -91,7 +136,9 @@ export default function ArticlesPage() {
     <Suspense
       fallback={
         <div className="flex h-[calc(100vh-3.5rem)] px-4">
-          <ArticleSidebarSkeleton />
+          <div className="hidden md:block">
+            <ArticleSidebarSkeleton />
+          </div>
           <ArticleDetailSkeleton />
         </div>
       }

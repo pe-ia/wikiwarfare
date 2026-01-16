@@ -66,7 +66,7 @@ export function CompareView({
           <p className="text-muted-foreground mb-4">
             One or both articles not found. Please select valid articles.
           </p>
-          <div className="grid grid-cols-2 gap-4 w-full max-w-xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-xl">
             <ArticleSelector
               articles={articles}
               value={currentA}
@@ -99,8 +99,8 @@ export function CompareView({
   return (
     <div className="container py-6 px-4 space-y-6">
       {/* Header with selectors */}
-      <div className="flex items-end justify-between gap-4">
-        <div className="grid grid-cols-2 gap-4 flex-1 max-w-xl">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 max-w-xl">
           <ArticleSelector
             articles={articles}
             value={slugifyTitle(articleA.page_title)}
@@ -127,7 +127,7 @@ export function CompareView({
       </div>
 
       {/* Side-by-side summary cards */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {[articleA, articleB].map((article, i) => (
           <Card key={article.filename}>
             <CardHeader className="pb-2">
