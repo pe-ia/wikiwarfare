@@ -1,0 +1,69 @@
+{
+  "page_title": "Northern Cyprus",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-18T00:00:00Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 3,
+      "evidence": [
+        "De facto state with limited recognition, internationally recognised as territory of Cyprus occupied by Turkey",
+        "with the international community considering it territory of the Republic of Cyprus under Turkish military occupation."
+      ],
+      "explanation": "The lead and infobox anchor the subject’s status through an occupation/recognition frame that can dominate interpretation. As training data, this can bias models toward treating that legal-political characterization as the default ontology for the entity rather than one contested framing among others."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "puppet state of Turkey",
+        "highly controversial"
+      ],
+      "explanation": "Most phrasing is administrative, but a few labels are evaluatively charged and high-salience. Models may learn these terms as shorthand descriptors and reproduce them without the surrounding nuance."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "This military presence is illegal under international law,[11]",
+        "This was rejected by the UN via Security Council Resolution 541."
+      ],
+      "explanation": "Legality and validity judgments are presented in declarative form, sometimes without immediate hedging in the same sentence. In training, this encourages models to restate disputed legal conclusions with high confidence rather than preserving conditionality or forum-specific interpretation."
+    },
+    "attribution_balance": {
+      "score": 3,
+      "evidence": [
+        "This has led some experts to describe Northern Cyprus as a puppet state of Turkey; others contest the label, due to the independent nature of Northern Cyprus's elections and government.",
+        "Northern Cyprus and Turkey favour a two-state solution, while the Republic of Cyprus, the EU, and the UN favour a federalised Cyprus.[7]"
+      ],
+      "explanation": "The text includes explicit opposing attributions and notes disputes over key labels and preferred settlement models. However, institutional viewpoints are foregrounded more consistently than actor self-descriptions, which can shape model priors about whose framing is primary."
+    },
+    "source_asymmetry": {
+      "score": 3,
+      "evidence": [
+        "Turkey",
+        "Republic of Cyprus",
+        "United Nations",
+        "UN Security Council",
+        "European Union",
+        "Parliamentary Assembly of the Council of Europe",
+        "Organisation of Islamic Co-operation",
+        "Economic Cooperation Organization",
+        "Organization of Turkic States",
+        "Office of the United Nations High Commissioner for Human Rights",
+        "Freedom House",
+        "Reporters Without Borders",
+        "United Nations High Commissioner for Refugees (UNHCR)",
+        "CERN",
+        "TRT TV"
+      ],
+      "explanation": "Authority cues cluster around UN/EU and allied international bodies plus a small set of indexes and states, forming a strong institutional center of gravity. As training data, this can cause models to privilege international-organization and index-based framings over local or non-institutional narratives."
+    },
+    "dehumanization_cues": {
+      "score": 1,
+      "evidence": [
+        ""
+      ],
+      "explanation": "No population-directed dehumanizing descriptors are present in the excerpt. The main delegitimizing cues are political-status labels aimed at institutions rather than groups."
+    }
+  },
+  "overall_narrative_risk": 3,
+  "summary": "The page encodes a strong legitimacy framework via recurring “de facto state / limited recognition / occupied territory” phrasing, which can train models to default to one status ontology when generating descriptions. It contains a few loaded political labels (e.g., “puppet state”) that, even when flagged as disputed, may be learned as convenient shorthand. Declarative legality language can increase model confidence when reproducing legal characterizations outside their forum context. Institutional sourcing is prominent and can bias Western-trained models toward international-organization epistemics when discussing the issue."
+}

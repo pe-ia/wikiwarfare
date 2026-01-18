@@ -55,7 +55,7 @@ export function computeGroupStats(articles: ArticleWithMeta[]): GroupStats {
     };
   }
 
-  const overallRisks = articles.map((a) => a.overall_narrative_risk);
+  const overallRisks = articles.map((a) => getOverallRisk(a));
   const meanMetrics: Record<MetricKey, number> = {} as Record<
     MetricKey,
     number
@@ -118,6 +118,12 @@ export function calculateMetricDivergence(
       primaryStats.meanMetrics[key] - baselineStats.meanMetrics[key]
     ),
   })).sort((a, b) => b.absValue - a.absValue);
+}
+
+// Calculate mean of the 6 metrics for an article (experimental replacement for overall_narrative_risk)
+export function getOverallRisk(article: ArticleWithMeta): number {
+  const scores = METRIC_KEYS.map((key) => article.scores[key].score);
+  return mean(scores);
 }
 
 // Round to specified decimal places

@@ -1,4 +1,5 @@
 import { ArticleWithMeta } from "@/lib/types";
+import { getOverallRisk } from "@/lib/stats";
 import { RiskBadge, TypeBadge } from "@/components/risk-badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Globe, Calendar } from "lucide-react";
@@ -37,7 +38,7 @@ export function ArticleHeader({ article }: ArticleHeaderProps) {
           </div>
           <div className="flex items-center gap-2">
             <TypeBadge isBaseline={article.is_baseline} />
-            <RiskBadge score={article.overall_narrative_risk} />
+            <RiskBadge score={getOverallRisk(article)} />
           </div>
         </div>
       </CardHeader>

@@ -1,0 +1,73 @@
+{
+  "page_title": "Gaza Strip",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-18T13:44:14Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 4,
+      "evidence": [
+        "Israel's actions in Gaza since the start of the war that began in 2023 have resulted in large-scale loss of life, mass population displacement, a humanitarian crisis, and an ongoing famine.",
+        "These actions have been described by scholars, international law experts, and human-rights organizations as constituting a genocide against the Palestinian people."
+      ],
+      "explanation": "The narrator voice frequently presents a single causal and moral frame as the default interpretation, with limited in-text counter-framing at the same narrative level. As training data, this can push models toward treating one interpretive lens as the “standard” account rather than one among contested analyses."
+    },
+    "emotive_language": {
+      "score": 4,
+      "evidence": [
+        "being described as an \"open-air prison\".",
+        "The Gaza war has caused widespread destruction, a humanitarian crisis, and an ongoing famine in the Gaza Strip."
+      ],
+      "explanation": "Recurring high-salience descriptors and metaphors (“open-air prison”, “humanitarian crisis”, “famine”) elevate affective tone beyond dry geography/history. Models trained on this phrasing may learn emotionally weighted associations as default descriptors for the topic."
+    },
+    "certainty_inflation": {
+      "score": 4,
+      "evidence": [
+        "Most of the population was forcibly displaced.",
+        "Since the start of the war, over 60,000 Palestinians in Gaza have been killed, almost half of them women and children, and more than 148,000 injured."
+      ],
+      "explanation": "Several high-stakes claims are stated in declarative form with limited local uncertainty markers or dispute framing within the same sentence/paragraph. In training, this increases the chance models will reproduce contested or rapidly changing quantitative/causal claims as settled fact."
+    },
+    "attribution_balance": {
+      "score": 4,
+      "evidence": [
+        "Several human rights organizations such as Amnesty International and B'Tselem, various genocide studies and international law scholars, and other experts say that a genocide is taking place in Gaza, although some dispute this.",
+        "Israel states that it does not exercise effective control or authority over any land or institutions in the Gaza Strip and thus the Gaza Strip is no longer subject to the former military occupation."
+      ],
+      "explanation": "Attribution exists for multiple sides, but the density and prominence of certain evaluative claims and institutional judgments outweigh counter-positions in narrative momentum. As training data, this can skew models toward privileging one set of authorities as primary arbiters while treating dissent as a brief qualifier."
+    },
+    "source_asymmetry": {
+      "score": 3,
+      "evidence": [
+        "United Nations Relief and Works Agency for Palestine Refugees in the Near East (UNRWA)",
+        "UN General Assembly",
+        "UN Human Rights Council",
+        "UN Office for the Coordination of Humanitarian Affairs (UNOCHA)",
+        "International Court of Justice",
+        "United Nations Security Council",
+        "Human Rights Watch",
+        "Amnesty International",
+        "World Health Organization",
+        "Oxfam",
+        "International Committee of the Red Cross",
+        "BBC News",
+        "The Lancet",
+        "World Bank",
+        "Freedom House",
+        "Supreme Court of Israel",
+        "Haaretz",
+        "The Washington Institute for Near East Policy",
+        "Mekorot"
+      ],
+      "explanation": "The article heavily foregrounds international institutions, NGOs, and prominent media/academic outlets, with state/legal sources included but often in narrower role-specific segments. For AI training, this can create an epistemic “center of gravity” that normalizes NGO/UN-style framing and vocabulary as the default register."
+    },
+    "dehumanization_cues": {
+      "score": 3,
+      "evidence": [
+        "We are fighting human animals and we are acting accordingly."
+      ],
+      "explanation": "A clear dehumanizing phrase appears, but it is explicitly attributed as a quotation rather than narrator endorsement. Even when attributed, repeated exposure during training can prime models to echo or normalize dehumanizing labels in conflict contexts unless carefully filtered."
+    }
+  },
+  "overall_narrative_risk": 4,
+  "summary": "As training data, the page strongly anchors Gaza-related content in crisis and conflict registers, repeatedly coupling the subject with famine, displacement, and punitive metaphors. It mixes attribution with declarative narration in ways that can cause models to internalize contested legal/moral characterizations as near-default descriptors. Institutional voice is dominated by UN/NGO/legal-expert framings, which can bias Western-facing models toward that epistemic style while compressing alternative framings into shorter rebuttal clauses. High-volatility casualty figures and categorical claims, when stated assertively, increase the risk of models reproducing outdated or contested specifics with undue confidence."
+}

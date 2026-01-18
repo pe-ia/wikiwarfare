@@ -14,6 +14,7 @@ import {
   createHistogramBuckets,
   calculateMetricDivergence,
   roundTo,
+  getOverallRisk,
 } from "@/lib/stats";
 import { slugifyTitle } from "@/lib/baselines";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -70,10 +71,10 @@ export function StatsView({ articles }: StatsViewProps) {
   // Compute histogram data
   const histogramData = useMemo(() => {
     const primaryBuckets = createHistogramBuckets(
-      primaries.map((a) => a.overall_narrative_risk)
+      primaries.map((a) => getOverallRisk(a))
     );
     const baselineBuckets = createHistogramBuckets(
-      baselines.map((a) => a.overall_narrative_risk)
+      baselines.map((a) => getOverallRisk(a))
     );
 
     return primaryBuckets.map((pb, i) => ({
@@ -110,8 +111,8 @@ export function StatsView({ articles }: StatsViewProps) {
     // Filter by risk range
     result = result.filter(
       (a) =>
-        a.overall_narrative_risk >= riskRange[0] &&
-        a.overall_narrative_risk <= riskRange[1]
+        getOverallRisk(a) >= riskRange[0] &&
+        getOverallRisk(a) <= riskRange[1]
     );
 
     // Sort
@@ -120,7 +121,7 @@ export function StatsView({ articles }: StatsViewProps) {
       if (sortField === "title") {
         comparison = a.page_title.localeCompare(b.page_title);
       } else if (sortField === "overall_risk") {
-        comparison = a.overall_narrative_risk - b.overall_narrative_risk;
+        comparison = getOverallRisk(a) - getOverallRisk(b);
       } else {
         comparison = a.scores[sortField].score - b.scores[sortField].score;
       }
@@ -382,7 +383,7 @@ export function StatsView({ articles }: StatsViewProps) {
                     </TableCell>
                     <TableCell className="text-center">
                       <RiskBadge
-                        score={article.overall_narrative_risk}
+                        score={getOverallRisk(article)}
                         showLabel={false}
                         size="sm"
                       />

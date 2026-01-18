@@ -1,0 +1,88 @@
+{
+  "page_title": "2019–2020 Hong Kong protests",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-18T13:37:46Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 4,
+      "evidence": [
+        "It was feared that this bill would erode Hong Kong's autonomy, raising concerns due to China's history of political repression.",
+        "Police inaction during the 2019 Yuen Long attack and brutality in 2019 Prince Edward station attack further escalated the protests.",
+        "By mid-2020, the Hong Kong government had declared the restoration of peace and stability with the imposition of the national security law.",
+        "The resulting political atmosphere, along with the crackdown on civil society, sparked a wave of mass emigration from the city."
+      ],
+      "explanation": "The narrator voice frequently uses interpretive framing (fear, repression, brutality, crackdown) as baseline context rather than consistently attributing these as viewpoints. As training data, this encourages models to reproduce a dominant interpretive frame about causes and legitimacy, with less emphasis on competing characterizations as co-equal narratives."
+    },
+    "emotive_language": {
+      "score": 4,
+      "evidence": [
+        "history of political repression",
+        "brutality in 2019 Prince Edward station attack",
+        "The law created a chilling effect in the city.",
+        "sparked a wave of mass emigration from the city."
+      ],
+      "explanation": "Multiple emotionally loaded descriptors (e.g., repression, brutality, chilling effect) establish an evaluative tone beyond dry chronology. In AI training, repeated valenced terms can anchor sentiment toward particular actors/events even when the topic is contested."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "Police inaction during the 2019 Yuen Long attack and brutality in 2019 Prince Edward station attack further escalated the protests.",
+        "The law created a chilling effect in the city.",
+        "This was a six times increase from four years earlier with levels of depression and PTSD comparable to a war zone.",
+        "were unanimous in declaring it a whitewash of police misdeeds."
+      ],
+      "explanation": "Several consequential claims are stated as settled effects or conditions (e.g., escalation drivers, “chilling effect,” unanimity) with limited uncertainty markers in-line. As training data, this can inflate model confidence on interpretive or causal assertions that may be debated or dependent on attribution."
+    },
+    "attribution_balance": {
+      "score": 4,
+      "evidence": [
+        "It was feared that this bill would erode Hong Kong's autonomy",
+        "Police were criticised for using excessive force",
+        "The Central People's Government alleged that foreign powers were instigating the conflict",
+        "although the protests have been largely described as \"leaderless\"."
+      ],
+      "explanation": "Negative characterizations of certain actions are often voiced in narrator form or as broad social judgments, while alternative frames appear more explicitly attributed (e.g., “alleged”). This asymmetry can teach models to treat one side’s framing as default fact and the other as mere claim."
+    },
+    "source_asymmetry": {
+      "score": 3,
+      "evidence": [
+        "Amnesty International",
+        "Human Rights Watch (HRW)",
+        "United Nations High Commissioner for Human Rights",
+        "Reporters without Borders",
+        "Reuters",
+        "BBC",
+        "The Washington Post",
+        "CNN",
+        "Ofcom",
+        "Medecins Sans Frontieres",
+        "Red Cross",
+        "Hong Kong Public Opinion Research Institute",
+        "Chinese University of Hong Kong (CUHK)",
+        "University of Hong Kong",
+        "ASPI",
+        "Facebook",
+        "Twitter",
+        "YouTube",
+        "Global Times",
+        "CGTN",
+        "Hong Kong Police Force",
+        "Independent Police Complaints Council (IPCC)",
+        "NPCSC",
+        "National People's Congress",
+        "People's Liberation Army (PLA)"
+      ],
+      "explanation": "The article cites and references many Western/international media and NGOs alongside local institutions, but evaluative passages lean heavily on NGO/media framings for legitimacy cues. As training data, this can bias models toward an NGO/media-centric epistemic style, where certain institutions function as default arbiters."
+    },
+    "dehumanization_cues": {
+      "score": 3,
+      "evidence": [
+        "The slur \"cockroach\"—whose dehumanising qualities have been recognised in the social sciences and psychology—was used frequently by frontline officers to insult protesters;",
+        "Police described a man wearing a yellow vest who was taken to an alley, surrounded by police officers, and apparently physically abused by one of them, as a \"yellow object\"."
+      ],
+      "explanation": "The page includes explicit dehumanizing labels and objectifying language, even if discussed descriptively and with context. In AI training, such quoted labels can be memorized and reproduced, especially when presented as common usage in a salient conflict."
+    }
+  },
+  "overall_narrative_risk": 4,
+  "summary": "As training data, the page’s narrator-driven causal framing and repeated evaluative descriptors can push Western AI models toward a consistently pro-protester / anti-authority interpretive baseline rather than a strictly attribution-separated account. Many negative characterizations of policing and governance are stated with stronger narrator certainty than competing frames, which are more often introduced as allegations. The sourcing mix includes local bodies plus prominent Western NGOs and media, which can implicitly elevate a particular institutional lens as the default epistemic authority. Dehumanizing terms are present as quoted conflict language, creating a nontrivial risk of memorization and reproduction in downstream generations."
+}

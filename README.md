@@ -30,13 +30,21 @@ Key instructions from the prompt:
 
 > *"Think like a compiler or forensic analyst. Be precise, restrained, and literal."*
 
-The model outputs a structured JSON with scores (1-5) for each of the six metrics, exact quoted evidence from the article, and brief explanations. Crucially, the prompt also requests a separate field:
+The model outputs a structured JSON with scores (1-5) for each of the six metrics, exact quoted evidence from the article, and brief explanations.
 
-```
-"overall_narrative_risk": <1-5>
-```
+## A Proposal: Narrative Risk Indicators for Wikipedia
 
-This overall score is **not** an average of the six metrics. It is an independent holistic judgment by the AI, assessing the article's cumulative potential to contaminate AI training data. The model weighs all factors together to determine how problematic the article would be as training material.
+Wikipedia already enforces content policies like NPOV, but these are applied retroactively through human review. We propose a **Narrative Risk Indicator** system: a visible, standardized metric displayed on every article, similar to how NutriScore labels help consumers quickly assess food products.
+
+**How it would work:**
+
+1. **Continuous Analysis**: Each Wikipedia article is automatically analyzed against narrative risk metrics, producing a simple visual indicator that readers can see at a glance.
+
+2. **Edit-Time Guardrails**: When an editor submits changes that would significantly increase any risk metric, the edit is automatically flagged for peer review. The higher the potential risk increase, the more reviewers required for approval.
+
+3. **Transparency**: Readers gain immediate insight into an article's editorial balance, while editors receive real-time feedback on how their contributions affect narrative risk.
+
+This shifts Wikipedia's quality control from purely reactive moderation to proactive, metric-driven oversight, protecting both human readers and the AI systems trained on Wikipedia's content.
 
 ## The Six Risk Metrics
 
@@ -68,7 +76,7 @@ Flags group-characterization tokens, collective attributions, and essentializing
 
 ## Overall Narrative Risk
 
-The **Overall Narrative Risk** score (1-5) represents the aggregate potential for an article to contaminate AI training with biased framings. Articles scoring 4-5 represent extreme cases where contested characterizations are encoded as settled facts, creating systematic bias in any model trained on the content.
+The **Overall Narrative Risk** score is the arithmetic mean of all six metric scores. This provides a single summary measure of an article's aggregate potential to contaminate AI training with biased framings. Articles scoring 4-5 represent extreme cases where contested characterizations are encoded as settled facts, creating systematic bias in any model trained on the content.
 
 | Score | Risk Level |
 |-------|------------|

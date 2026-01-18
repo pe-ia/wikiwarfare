@@ -15,7 +15,8 @@ import {
   Brain,
   BookOpen,
   Cpu,
-  FileText
+  FileText,
+  Lightbulb
 } from "lucide-react";
 
 const metrics = [
@@ -163,17 +164,7 @@ export default function HomePage() {
           </div>
           <p>
             The model outputs a structured JSON with scores (1-5) for each of the six metrics,
-            exact quoted evidence from the article, and brief explanations. Crucially, the prompt
-            also requests a separate field:
-          </p>
-          <div className="p-3 bg-muted rounded-lg font-mono text-sm text-muted-foreground">
-            "overall_narrative_risk": &lt;1-5&gt;
-          </div>
-          <p>
-            This overall score is <strong>not</strong> an average of the six metrics. It is an
-            independent holistic judgment by the AI, assessing the article's cumulative potential
-            to contaminate AI training data. The model weighs all factors together to determine
-            how problematic the article would be as training material.
+            exact quoted evidence from the article, and brief explanations.
           </p>
           <p className="text-sm text-muted-foreground">
             View the full prompt and methodology on{" "}
@@ -186,6 +177,56 @@ export default function HomePage() {
               GitHub
             </a>
             .
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* Proposal */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Lightbulb className="h-5 w-5" />
+            A Proposal: Narrative Risk Indicators for Wikipedia
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p>
+            Wikipedia already enforces content policies like NPOV, but these are applied
+            retroactively through human review. We propose a <strong>Narrative Risk Indicator</strong> system:
+            a visible, standardized metric displayed on every article, similar to how NutriScore
+            labels help consumers quickly assess food products.
+          </p>
+          <div className="space-y-3">
+            <div className="flex gap-3">
+              <span className="font-semibold text-primary shrink-0">1.</span>
+              <p>
+                <strong>Continuous Analysis</strong>: Each Wikipedia article is automatically
+                analyzed against narrative risk metrics, producing a simple visual indicator
+                that readers can see at a glance.
+              </p>
+            </div>
+            <div className="flex gap-3">
+              <span className="font-semibold text-primary shrink-0">2.</span>
+              <p>
+                <strong>Edit-Time Guardrails</strong>: When an editor submits changes that
+                would significantly increase any risk metric, the edit is automatically flagged
+                for peer review. The higher the potential risk increase, the more reviewers
+                required for approval.
+              </p>
+            </div>
+            <div className="flex gap-3">
+              <span className="font-semibold text-primary shrink-0">3.</span>
+              <p>
+                <strong>Transparency</strong>: Readers gain immediate insight into an article's
+                editorial balance, while editors receive real-time feedback on how their
+                contributions affect narrative risk.
+              </p>
+            </div>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            This shifts Wikipedia's quality control from purely reactive moderation to proactive,
+            metric-driven oversight, protecting both human readers and the AI systems trained
+            on Wikipedia's content.
           </p>
         </CardContent>
       </Card>
@@ -231,10 +272,11 @@ export default function HomePage() {
         </CardHeader>
         <CardContent className="space-y-4">
           <p>
-            The <strong>Overall Narrative Risk</strong> score (1-5) represents the aggregate
-            potential for an article to contaminate AI training with biased framings. Articles
-            scoring 4-5 represent extreme cases where contested characterizations are encoded
-            as settled facts, creating systematic bias in any model trained on the content.
+            The <strong>Overall Narrative Risk</strong> score is the arithmetic mean of all six
+            metric scores. This provides a single summary measure of an article's aggregate potential
+            to contaminate AI training with biased framings. Articles scoring 4-5 represent extreme
+            cases where contested characterizations are encoded as settled facts, creating systematic
+            bias in any model trained on the content.
           </p>
           <div className="flex flex-wrap gap-2">
             <Badge className="bg-green-500 text-white">1: Low Risk</Badge>

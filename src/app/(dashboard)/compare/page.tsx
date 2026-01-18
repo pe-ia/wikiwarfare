@@ -18,8 +18,8 @@ function CompareContent() {
     <CompareView
       articles={articles}
       savedComparisons={comparisons}
-      initialA="Euromaidan"
-      initialB="2011_Egyptian_revolution"
+      initialA="Israel"
+      initialB="Turkey"
       onSaveComparison={saveComparison}
       onDeleteComparison={deleteComparison}
     />

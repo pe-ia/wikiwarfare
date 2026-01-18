@@ -34,9 +34,9 @@ function ArticlesContent() {
       article = getStaticArticleByTitle(title);
     }
 
-    // Default to Euromaidan or first primary
+    // Default to American_imperialism or first primary
     if (!article) {
-      article = getStaticArticleByTitle("Euromaidan");
+      article = getStaticArticleByTitle("American_imperialism");
     }
     if (!article) {
       const primaries = allArticles.filter((a) => !a.is_baseline);

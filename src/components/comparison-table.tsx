@@ -93,50 +93,7 @@ export function ComparisonTable({ articleA, articleB }: ComparisonTableProps) {
               </TableRow>
             );
           })}
-          {/* Overall row */}
-          <TableRow className="font-semibold bg-muted/50">
-            <TableCell>Overall Narrative Risk</TableCell>
-            <TableCell className="text-center">
-              {(() => {
-                const delta =
-                  articleA.overall_narrative_risk - articleB.overall_narrative_risk;
-                return (
-                  <span
-                    className={`font-mono text-sm ${
-                      delta > 0
-                        ? "text-red-500"
-                        : delta < 0
-                        ? "text-green-500"
-                        : "text-muted-foreground"
-                    }`}
-                  >
-                    {delta > 0 ? "+" : ""}
-                    {roundTo(delta, 1)}
-                  </span>
-                );
-              })()}
-            </TableCell>
-            <TableCell>
-              {getDeltaIndicator(
-                articleA.overall_narrative_risk - articleB.overall_narrative_risk
-              )}
-            </TableCell>
-            <TableCell className="text-center">
-              <RiskBadge
-                score={articleA.overall_narrative_risk}
-                showLabel={false}
-                size="sm"
-              />
-            </TableCell>
-            <TableCell className="text-center">
-              <RiskBadge
-                score={articleB.overall_narrative_risk}
-                showLabel={false}
-                size="sm"
-              />
-            </TableCell>
-          </TableRow>
-        </TableBody>
+          </TableBody>
       </Table>
 
       {/* Expandable details per metric */}

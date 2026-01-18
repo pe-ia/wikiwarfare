@@ -3,7 +3,7 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
 import { ArticleWithMeta, SavedComparison } from "@/lib/types";
-import { metricArray } from "@/lib/stats";
+import { metricArray, getOverallRisk } from "@/lib/stats";
 import { slugifyTitle, findByTitle } from "@/lib/baselines";
 import { ArticleSelector } from "@/components/article-selector";
 import { ComparisonTable } from "@/components/comparison-table";
@@ -137,7 +137,7 @@ export function CompareView({
                 </CardTitle>
                 <div className="flex items-center gap-2">
                   <TypeBadge isBaseline={article.is_baseline} />
-                  <RiskBadge score={article.overall_narrative_risk} />
+                  <RiskBadge score={getOverallRisk(article)} />
                 </div>
               </div>
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
