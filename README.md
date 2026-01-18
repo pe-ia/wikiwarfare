@@ -1,6 +1,6 @@
 # WikiWarfare
 
-Analyzing narrative risk in Wikipedia articles for AI training safety
+Forensic analysis of narrative risk in Wikipedia articles for AI training safety
 
 ---
 
@@ -14,7 +14,7 @@ More critically, Wikipedia serves as a **truth anchor** for AI systems. When mod
 
 ## What This Project Does
 
-WikiWarfare analyzes Wikipedia articles for **narrative risk**: the potential for article content to embed biased, one-sided, or manipulative framings into AI training data.
+WikiWarfare performs forensic analysis of Wikipedia articles for **narrative risk**: the potential for article content to embed biased, one-sided, or manipulative framings into AI training data.
 
 We compare **Primary** articles (topics of geopolitical sensitivity or active information conflict) against **Baseline** articles (similar topics with more balanced coverage) to identify systematic patterns of narrative manipulation.
 

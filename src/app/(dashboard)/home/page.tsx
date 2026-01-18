@@ -70,7 +70,7 @@ export default function HomePage() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold tracking-tight">WikiWarfare</h1>
         <p className="text-xl text-muted-foreground">
-          Analyzing narrative risk in Wikipedia articles for AI training safety
+          Forensic analysis of narrative risk in Wikipedia articles for AI training safety
         </p>
       </div>
 
@@ -117,7 +117,7 @@ export default function HomePage() {
         </CardHeader>
         <CardContent className="space-y-4">
           <p>
-            WikiWarfare analyzes Wikipedia articles for <strong>narrative risk</strong>: the
+            WikiWarfare performs forensic analysis of Wikipedia articles for <strong>narrative risk</strong>: the
             potential for article content to embed biased, one-sided, or manipulative framings
             into AI training data.
           </p>
