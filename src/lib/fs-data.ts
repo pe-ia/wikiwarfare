@@ -2,11 +2,10 @@ import { promises as fs } from "fs";
 import path from "path";
 import { cache } from "react";
 import {
-  Article,
   ArticleSchema,
   ArticleWithMeta,
 } from "./types";
-import { isBaseline, titleFromFilename } from "./baselines";
+import { loadAllComparisons } from "./fs-comparisons";
 
 // Path to wiki data directory
 const WIKI_DATA_DIR = path.join(process.cwd(), "data", "raw", "wiki");
@@ -24,7 +23,8 @@ export function clearLoadWarnings(): void {
 
 // Load a single article JSON file
 async function loadArticleFile(
-  filePath: string
+  filePath: string,
+  baselineFilenames: Set<string>
 ): Promise<ArticleWithMeta | null> {
   try {
     const content = await fs.readFile(filePath, "utf-8");
@@ -38,7 +38,6 @@ async function loadArticleFile(
     }
 
     const filename = path.basename(filePath);
-    const title = titleFromFilename(filename);
 
     // Clean up the article data - trim whitespace from page_title
     const articleData = {
@@ -49,7 +48,7 @@ async function loadArticleFile(
     return {
       ...articleData,
       filename,
-      is_baseline: isBaseline(title),
+      is_baseline: baselineFilenames.has(filename.toLowerCase()),
     };
   } catch (error) {
     const filename = path.basename(filePath);
@@ -65,11 +64,19 @@ async function loadAllArticlesUncached(): Promise<ArticleWithMeta[]> {
   clearLoadWarnings();
 
   try {
+    // Derive baseline filenames from comparison data
+    const comparisons = await loadAllComparisons();
+    const baselineFilenames = new Set(
+      comparisons.map((c) => c.baseline_page.toLowerCase())
+    );
+
     const files = await fs.readdir(WIKI_DATA_DIR);
     const jsonFiles = files.filter((f) => f.endsWith(".json"));
 
     const articles = await Promise.all(
-      jsonFiles.map((file) => loadArticleFile(path.join(WIKI_DATA_DIR, file)))
+      jsonFiles.map((file) =>
+        loadArticleFile(path.join(WIKI_DATA_DIR, file), baselineFilenames)
+      )
     );
 
     return articles.filter((a): a is ArticleWithMeta => a !== null);

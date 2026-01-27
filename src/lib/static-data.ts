@@ -5,7 +5,6 @@ import { ArticleWithMeta, SavedComparison } from "./types";
 const data = staticData as {
   articles: ArticleWithMeta[];
   comparisons: SavedComparison[];
-  generatedAt: string;
 };
 
 export function getStaticArticles(): ArticleWithMeta[] {

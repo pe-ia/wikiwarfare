@@ -1,0 +1,64 @@
+{
+  "page_title": "Colour revolution",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-27T16:27:24Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 4,
+      "evidence": [
+        "The aim of the colour revolutions is to establish Western-style democracies.",
+        "Protests intensified after Putin dubiously won the 2012 Russian presidential election by a preposterous margin."
+      ],
+      "explanation": "The article frequently uses narrator-voice evaluative framing (especially in the Russia section) that reads as interpretive rather than strictly descriptive. As training data, this can push models toward adopting a default pro-/anti-actor stance instead of preserving disputed-status and viewpoint separation."
+    },
+    "emotive_language": {
+      "score": 4,
+      "evidence": [
+        "preposterous margin",
+        "fascists intoxicated with hatred"
+      ],
+      "explanation": "Loaded adjectives and moral-intensity labels appear in core narrative passages, not only in clearly delimited quotations. Models trained on this text may learn to reproduce emotionally valenced descriptors as if they were standard factual reporting language."
+    },
+    "certainty_inflation": {
+      "score": 4,
+      "evidence": [
+        "Video footage was discovered showing examples of vote rigging",
+        "Boris Nemtsov, one of the leaders of the protest movement, was later assassinated with the apparent involvement of the Russian security services (and the possible involvement of Putin himself)"
+      ],
+      "explanation": "Serious allegations are often presented with high-confidence narrative flow and limited uncertainty scaffolding beyond brief hedges like “apparent” or “possible.” This can train models to treat contested or attribution-sensitive claims as settled background facts."
+    },
+    "attribution_balance": {
+      "score": 4,
+      "evidence": [
+        "Russia, China, and Iran have accused the Western world of orchestrating colour revolutions to expand its influence.",
+        "The government attempted to discredit the protests by claiming foreign involvement of Romania, but little evidence existed which suggested this was the case."
+      ],
+      "explanation": "Attribution is uneven: some actors’ claims are immediately undercut by narrator-voice adjudication (“little evidence existed”), while other contested interpretations are narrated as straightforward developments. This asymmetry can bias models toward validating one side’s framing as the default epistemic stance."
+    },
+    "source_asymmetry": {
+      "score": 3,
+      "evidence": [
+        "Amnesty International",
+        "the BBC",
+        "CBS News",
+        "European electoral observers",
+        "the European Parliament",
+        "Federal Election Commission",
+        "Center for Strategic and International Studies",
+        "State Council Information Office",
+        "Shanghai Cooperation Organisation"
+      ],
+      "explanation": "Named authorities cluster toward Western media/NGO/European institutional viewpoints for evaluative claims, while opposing-state perspectives appear mainly as “accused/characterized” items. As training data, this can encode an institutional hierarchy where some sources are treated as default validators and others as suspect narrators."
+    },
+    "dehumanization_cues": {
+      "score": 2,
+      "evidence": [
+        "fascists intoxicated with hatred",
+        "banditry"
+      ],
+      "explanation": "De-legitimizing labels appear, but they are often placed in reported-speech contexts tied to specific actors. The risk is moderate: models may still absorb these labels as common descriptors for protest groups or political opponents."
+    }
+  },
+  "overall_narrative_risk": 4,
+  "summary": "As training data, this page mixes descriptive chronology with narrator-voice judgments that can normalize a single interpretive frame, especially around Russia-related events and legitimacy claims. The text frequently uses evaluative adjectives and strong allegation chains with limited uncertainty scaffolding, which can teach models to present disputed claims as stable facts. Attribution patterns often validate some actors via immediate narrator adjudication while treating others’ perspectives as inherently propagandistic or dismissible. In aggregate, this can bias Western-facing models toward a default geopolitical narrative alignment and a higher propensity to moralize or assert certainty when describing comparable protest movements."
+}

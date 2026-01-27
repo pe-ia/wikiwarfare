@@ -1,0 +1,61 @@
+{
+  "page_title": "Foreign relations of Oman",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-27T16:24:50Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 2,
+      "evidence": [
+        "Since 1969, Oman has pursued a moderate foreign policy",
+        "Oman has traditionally supported Middle East peace initiatives"
+      ],
+      "explanation": "The article uses evaluative framing (e.g., \"moderate\", \"supported\") as narrator-voice characterization rather than consistently attributing assessments to sources. As training data, this can nudge models toward treating these interpretations as baseline descriptors rather than contested or contextual judgments."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "The relationship between Islamabad and Muscat is warm",
+        "a secretive meeting between Canada's prime minister"
+      ],
+      "explanation": "Most language is administrative and descriptive, but a few affective descriptors (\"warm\", \"secretive\") inject interpretive tone. In AI training, these isolated adjectives can propagate subtle sentiment cues about actors and events without explicit sourcing."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "The Sultanate of Oman is the oldest independent state in the Arab World.",
+        "Oman discovered a spy network operated by the United Arab Emirates"
+      ],
+      "explanation": "Several strong claims are presented in declarative form without visible uncertainty markers or explicit attribution in the prose itself. Models trained on such text may learn to restate disputed or evidentiary claims as settled facts, especially around geopolitically sensitive assertions."
+    },
+    "attribution_balance": {
+      "score": 3,
+      "evidence": [
+        "They were reportedly interested in who would replace Qaboos as his heir and about Oman's relations with Iran.",
+        "An NGO which launched a probe into foreign funding of organizations in Egypt found that Oman, along with the United Arab Emirates, donated $14.1 million"
+      ],
+      "explanation": "Attribution appears intermittently (e.g., \"reportedly\", \"An NGO...found\"), but much interpretive framing is left as narrator voice rather than systematically tied to who claims what. This can train models to blur the boundary between encyclopedic description and sourced allegation or inference."
+    },
+    "source_asymmetry": {
+      "score": 3,
+      "evidence": [
+        "United Nations",
+        "Arab League",
+        "Gulf Cooperation Council",
+        "Foreign Ministry",
+        "Holy See",
+        "UN",
+        "Fox Petroleum Group",
+        "Concordia University",
+        "World Trade Organization"
+      ],
+      "explanation": "The institutional landscape is dominated by states, intergovernmental bodies, and a small set of named organizations/companies, with limited plurality of competing epistemic communities. As training data, this skews what counts as “authoritative” toward official diplomatic and institutional frames rather than multi-perspective historiography."
+    },
+    "dehumanization_cues": {
+      "score": 1,
+      "evidence": [],
+      "explanation": "No clear dehumanizing labels or legitimacy-denying group descriptors appear in the provided text. As training data, the page is unlikely to teach overt dehumanization patterns."
+    }
+  },
+  "overall_narrative_risk": 2,
+  "summary": "The excerpt is largely administrative and timeline-driven, which generally reduces overt narrative steering, but it still embeds a few evaluative characterizations (e.g., \"moderate foreign policy\") as narrator voice. Some high-impact assertions are stated declaratively without strong in-text uncertainty signaling, which can lead trained models to repeat them as settled facts. The sourcing posture, as reflected in named institutions, leans toward official-state and intergovernmental framing, which can bias Western-trained models toward institutional-diplomacy perspectives as default. Overall risk is low-to-moderate, driven more by subtle framing and certainty presentation than by emotive or dehumanizing language."
+}

@@ -8,28 +8,7 @@ const WIKI_DATA_DIR = join(ROOT_DIR, 'data', 'raw', 'wiki');
 const COMPARISONS_DIR = join(ROOT_DIR, 'data', 'interim', 'comparisons');
 const OUTPUT_DIR = join(ROOT_DIR, 'src', 'data');
 
-// Baseline titles - must match lib/baselines.ts
-const BASELINE_TITLES = [
-  "NATO_bombing_of_Yugoslavia",
-  "Battle_of_Mosul_(2016–2017)",
-  "India–Pakistan_war_of_1947–1948",
-  "Irish_nationalism",
-  "Enlargement_of_the_European_Union",
-  "Turkey",
-  "Iraqi_invasion_of_Kuwait",
-  "Iran–Iraq_War",
-  "2011_Egyptian_revolution",
-  "French_Foreign_Legion",
-  "Territorial_evolution_of_the_British_Empire",
-];
-
-function isBaseline(title) {
-  return BASELINE_TITLES.some(
-    (baselineTitle) => baselineTitle.toLowerCase() === title.toLowerCase()
-  );
-}
-
-async function loadArticles() {
+async function loadArticles(baselineFilenames) {
   const files = await readdir(WIKI_DATA_DIR);
   const jsonFiles = files.filter((f) => f.endsWith('.json'));
 
@@ -43,12 +22,10 @@ async function loadArticles() {
       // Clean up page_title (trim whitespace)
       json.page_title = json.page_title.trim();
 
-      const title = file.replace(/\.json$/i, '');
-
       articles.push({
         ...json,
         filename: file,
-        is_baseline: isBaseline(title),
+        is_baseline: baselineFilenames.has(file.toLowerCase()),
       });
     } catch (error) {
       console.warn(`Failed to load ${file}:`, error.message);
@@ -98,19 +75,22 @@ async function main() {
   // Ensure output directory exists
   await mkdir(OUTPUT_DIR, { recursive: true });
 
-  // Load and write articles
-  const articles = await loadArticles();
-  console.log(`Loaded ${articles.length} articles`);
-
-  // Load and write comparisons
+  // Load comparisons first to derive baseline filenames
   const comparisons = await loadComparisons();
   console.log(`Loaded ${comparisons.length} comparisons`);
+
+  const baselineFilenames = new Set(
+    comparisons.map((c) => c.baseline_page.toLowerCase())
+  );
+
+  // Load articles, marking baselines from comparison data
+  const articles = await loadArticles(baselineFilenames);
+  console.log(`Loaded ${articles.length} articles`);
 
   // Write combined data
   const staticData = {
     articles,
     comparisons,
-    generatedAt: new Date().toISOString(),
   };
 
   await writeFile(

@@ -1,21 +1,3 @@
-// Baseline detection configuration
-// Articles in this list are considered "baseline" (neutral comparators)
-// All others are considered "primary" (articles of interest)
-
-export const BASELINE_TITLES: string[] = [
-  "NATO_bombing_of_Yugoslavia",
-  "Battle_of_Mosul_(2016–2017)",
-  "India–Pakistan_war_of_1947–1948",
-  "Irish_nationalism",
-  "Enlargement_of_the_European_Union",
-  "Turkey",
-  "Iraqi_invasion_of_Kuwait",
-  "Iran–Iraq_War",
-  "2011_Egyptian_revolution",
-  "French_Foreign_Legion",
-  "Territorial_evolution_of_the_British_Empire",
-];
-
 // Normalize title for comparison (remove extension, handle special chars)
 export function normalizeTitle(title: string): string {
   return title
@@ -38,13 +20,13 @@ export function titleFromFilename(filename: string): string {
   return filename.replace(/\.json$/i, "");
 }
 
-// Check if a title is a baseline article
-export function isBaseline(title: string): boolean {
-  const normalized = titleFromFilename(title);
-  return BASELINE_TITLES.some(
-    (baselineTitle) =>
-      baselineTitle.toLowerCase() === normalized.toLowerCase()
-  );
+// Decode percent-encoded characters (e.g. %27 → ')
+function decodePct(s: string): string {
+  try {
+    return decodeURIComponent(s);
+  } catch {
+    return s;
+  }
 }
 
 // Find article by title (case-insensitive)
@@ -53,11 +35,22 @@ export function findByTitle<T extends { page_title: string }>(
   title: string
 ): T | undefined {
   const searchTitle = normalizeTitle(title).toLowerCase();
+  const decodedTitle = decodePct(title);
+  const decodedSearch = normalizeTitle(decodedTitle).toLowerCase();
   return articles.find(
-    (article) =>
-      normalizeTitle(article.page_title).toLowerCase() === searchTitle ||
-      article.page_title.toLowerCase() === title.toLowerCase() ||
-      slugifyTitle(article.page_title).toLowerCase() === title.toLowerCase()
+    (article) => {
+      const norm = normalizeTitle(article.page_title).toLowerCase();
+      const lower = article.page_title.toLowerCase();
+      const slug = slugifyTitle(article.page_title).toLowerCase();
+      return (
+        norm === searchTitle ||
+        norm === decodedSearch ||
+        lower === title.toLowerCase() ||
+        lower === decodedTitle.toLowerCase() ||
+        slug === title.toLowerCase() ||
+        slug === decodedTitle.toLowerCase()
+      );
+    }
   );
 }
 

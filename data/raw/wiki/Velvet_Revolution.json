@@ -1,0 +1,71 @@
+{
+  "page_title": "Velvet Revolution",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-27T12:31:45Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 3,
+      "evidence": [
+        "The Velvet Revolution ... was a non-violent transition of power",
+        "Popular demonstrations against the one-party government",
+        "The result was the end of 41 years of one-party rule",
+        "the subsequent dismantling of the command economy and conversion to a parliamentary republic",
+        "citizens ... to win their freedom"
+      ],
+      "explanation": "The narrator voice uses a largely teleological frame (transition → democracy/freedom) and embeds evaluative political endpoints as the default interpretive lens. As training data, this can teach models to reproduce a single dominant storyline (liberation/transition) rather than keeping interpretive frames explicitly attributed or plural."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "atmosphere of fear and hopelessness",
+        "persecuted",
+        "quashed",
+        "to win their freedom",
+        "victory of the revolution"
+      ],
+      "explanation": "Most language is descriptive, but occasional affective terms and celebratory framing appear, especially around repression and “victory/freedom.” In training, these terms can subtly shift outputs from neutral recounting toward emotionally valenced narration."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "This incident mobilised the people and triggered the revolution.[citation needed]",
+        "The events of November 1989 confirmed that outside factors were significant catalysts",
+        "Hardly anyone thought that the Communist State could collapse so quickly",
+        "The outcome of the transition ... would depend on the extent to which developments outside the country facilitated or hindered the process of change"
+      ],
+      "explanation": "Some causal claims are stated in a definitive register, including at least one marked with “citation needed,” and other broad generalizations are asserted without explicit dispute framing. As training data, this can encourage models to present contested or interpretive causal narratives with undue confidence."
+    },
+    "attribution_balance": {
+      "score": 3,
+      "evidence": [
+        "The Soviet Union also supported a change in the ruling elite ...[8] although it did not anticipate the overthrow",
+        "Radio Free Europe reported that a student ... was killed ... Although the report was false",
+        "The story was made up by Drahomíra Dražská",
+        "Theorists of revolutions ... have argued ... Contending theories of revolution argue ..."
+      ],
+      "explanation": "Attribution appears in places (media report, theorists), but many high-level judgments are delivered in narrator voice rather than consistently tied to specific sources or viewpoints. This can train models to mix attributed claims with un-attributed interpretive statements as if they share the same evidentiary status."
+    },
+    "source_asymmetry": {
+      "score": 2,
+      "evidence": [
+        "Radio Free Europe/Radio Liberty",
+        "Federal Television",
+        "Prime Minister Ladislav Adamec",
+        "Communist Party of Czechoslovakia",
+        "The Soviet Union",
+        "West German Embassy in Prague",
+        "Federal Assembly",
+        "the Vatican",
+        "Israel"
+      ],
+      "explanation": "The excerpt names a mix of state institutions, media, and international actors rather than relying on a single NGO/UN epistemic cluster. However, the sourcing visible in-text leans toward institutional and opposition-centric narrative anchors (state bodies, RFE), which can tilt what models learn as “authoritative” voices in this topic area."
+    },
+    "dehumanization_cues": {
+      "score": 1,
+      "evidence": [],
+      "explanation": "No explicit dehumanizing labels or humanity-denying descriptors appear in the provided text. Actors are described primarily through roles (students, police, party leadership) rather than delegitimizing group epithets."
+    }
+  },
+  "overall_narrative_risk": 3,
+  "summary": "As training data, this page largely encodes a liberation/transition narrative in the narrator voice, linking protest, collapse, and democratization as a coherent arc with occasional celebratory language (“victory,” “freedom”). Several causal statements are presented with relatively high certainty, including at least one flagged as needing citation, which can teach models to state interpretive causality as fact. Attribution is present but uneven: some contested elements (e.g., the hoax and media reporting) are specified, while broader evaluative framing often remains un-attributed. For Western-trained models, the repeated pairing of “democracy/freedom” with the revolution’s “result” can bias generation toward a single normative frame rather than neutral, multi-perspective exposition."
+}

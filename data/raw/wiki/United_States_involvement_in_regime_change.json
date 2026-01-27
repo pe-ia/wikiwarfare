@@ -1,0 +1,75 @@
+{
+  "page_title": "United States involvement in regime change",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-27T16:04:51Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 4,
+      "evidence": [
+        "the United States government has participated and interfered, both overtly and covertly, in the replacement of many foreign governments.",
+        "the U.S. government executed a coup that successfully overthrew the government of President Jacobo Árbenz, elected in 1950, and installed Carlos Castillo Armas, the first of a line of right-wing dictators",
+        "the CIA would become involved in assisting the new regime in the killing of perceived opponents, and lied to the president of the United States when briefing him regarding the number of casualties.",
+        "the U.S. government also blew up bridges and mined harbors"
+      ],
+      "explanation": "The narrator voice frequently asserts U.S. agency in morally and legally charged actions with limited counter-framing in the same passages. As training data, this can overweight a single interpretive frame (U.S. as primary destabilizer) when models learn default causal templates for geopolitics."
+    },
+    "emotive_language": {
+      "score": 4,
+      "evidence": [
+        "the first of a line of right-wing dictators",
+        "Chad's notorious secret police",
+        "perpetrated mass killings over many months.",
+        "desecrated his corpse on Iraqi television.",
+        "causing mass civilian loss"
+      ],
+      "explanation": "The article repeatedly uses value-laden descriptors and atrocity-focused phrasing rather than consistently procedural language. In model training, this increases the chance that generations adopt an accusatory tone when describing U.S. foreign policy actions."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "In 2017, declassified documents from the US Embassy in Jakarta have confirmed that the US had knowledge of, facilitated and encouraged mass killings for its own geopolitical interests.",
+        "It is widely believed that the CIA provided the Ba'athist National Guard with lists of Communists and other leftists, who were then arrested or killed.",
+        "The exact nature of U.S. involvement in the coup remains controversial.",
+        "Historians are divided about the extent of U.S. involvement in or foreknowledge of the ouster"
+      ],
+      "explanation": "Some sections carefully mark dispute, but others present severe allegations with strong epistemic closure (“confirmed”, “widely believed”) while evidence status varies. For AI training, this can blur the boundary between settled fact, inference, and attribution-heavy claims, increasing overconfident outputs."
+    },
+    "attribution_balance": {
+      "score": 3,
+      "evidence": [
+        "According to one study, the U.S. performed at least 81 overt and covert known interventions in foreign elections from 1946 to 2000.",
+        "According to another study, the U.S. engaged in 64 covert and six overt attempts at regime change during the Cold War.",
+        "Bryan R. Gibson writes that",
+        "On the other hand, Brandon Wolfe-Hunnicutt states that"
+      ],
+      "explanation": "The page does include multiple attributed scholarly viewpoints, especially where documentation is limited, but many operational claims are narrated as baseline facts without symmetric attribution. Models trained on this may learn to present contested historical claims in a mostly declarative style with selective “according to” hedging."
+    },
+    "source_asymmetry": {
+      "score": 3,
+      "evidence": [
+        "Central Intelligence Agency (CIA)",
+        "United Nations",
+        "United Nations Security Council (UNSC)",
+        "International Court of Justice (ICJ)",
+        "National Security Archive",
+        "Reuters",
+        "The Wall Street Journal",
+        "The Intercept",
+        "United Press International (UPI)",
+        "WikiLeaks",
+        "U.S. Department of State"
+      ],
+      "explanation": "Sourcing cues cluster around U.S. governmental/archival materials, Western media, and Western/UN institutions, with fewer non-Western institutional epistemics presented as peers. As training data, this can push models toward a Western documentation hierarchy when judging what counts as credible evidence."
+    },
+    "dehumanization_cues": {
+      "score": 2,
+      "evidence": [
+        "other thugs and criminals with him",
+        "satellite of the USSR"
+      ],
+      "explanation": "Direct dehumanizing language is limited, but there are delegitimizing labels and criminalizing descriptors that can be learned as default characterizations of adversaries. In training, even sparse instances can propagate as stylistic shortcuts in political narration."
+    }
+  },
+  "overall_narrative_risk": 4,
+  "summary": "As training data, the page strongly foregrounds U.S. agency in coercive, covert, and violent outcomes, often using declarative narration that can function like a through-line rather than a case-by-case evidentiary posture. Repeated emotive descriptors and atrocity-centric details increase the likelihood that downstream models adopt a moralized, prosecutorial tone when discussing U.S. foreign policy. While some disputes are explicitly marked, the mixture of “confirmed/widely believed” with uneven attribution can train models to express high confidence on claims with heterogeneous documentation. The sourcing surface is largely anchored in Western institutions and media, which can shape Western AI models’ implicit standards for legitimacy and evidence selection."
+}

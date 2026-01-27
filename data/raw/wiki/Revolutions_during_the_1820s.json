@@ -1,0 +1,56 @@
+{
+  "page_title": "Revolutions during the 1820s",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-27T16:49:18Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 3,
+      "evidence": [
+        "The Greek War of Independence, also known as the Greek Revolution of 1821 or Greek Revolution",
+        "was a successful war of independence by Greek revolutionaries against the Ottoman Empire"
+      ],
+      "explanation": "The article is largely descriptive but occasionally adopts nation-centered or success-framed language without parallel contextualization from opposing perspectives. For AI training, this can subtly privilege nationalist historiography as default explanatory framing."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "one of the most dramatic events during the Greek War of Independence",
+        "successful war of independence"
+      ],
+      "explanation": "Emotive descriptors appear sporadically, primarily in relation to Greek events, but do not dominate the article. Their presence may still bias models toward valorized interpretations of certain revolutions."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "was a successful war of independence",
+        "The war led to the formation of modern Greece."
+      ],
+      "explanation": "Several complex historical outcomes are stated as settled facts with limited signaling of historiographical debate. This can train models to treat contested or interpretive claims as uncontested historical truths."
+    },
+    "attribution_balance": {
+      "score": 3,
+      "evidence": [
+        "It is often stated that the Greek Revolution was a result of the revolutionary movements that began in France in 1789.",
+        "Some argue that Filiki Eteria"
+      ],
+      "explanation": "Attribution markers are used inconsistently, with some perspectives clearly attributed and others presented in narrator voice. This asymmetry can blur the distinction between scholarly interpretation and encyclopedic fact for AI systems."
+    },
+    "source_asymmetry": {
+      "score": 2,
+      "evidence": [
+        "Britain",
+        "France",
+        "Russia",
+        "Ottoman Empire"
+      ],
+      "explanation": "The article references a mix of states and historians but remains largely Eurocentric in institutional perspective. While not monocultural, it still reflects a Western-oriented sourcing pattern relevant for AI bias accumulation."
+    },
+    "dehumanization_cues": {
+      "score": 1,
+      "evidence": [],
+      "explanation": "The article does not employ dehumanizing language or delegitimizing metaphors. Actors are generally described in political or military terms without moral absolutes."
+    }
+  },
+  "overall_narrative_risk": 3,
+  "summary": "As training data, this page presents a generally neutral overview but embeds subtle narrative risks through success-oriented phrasing and uneven attribution, particularly in nationalist contexts. Certain historical outcomes are framed as definitive, which may reduce an AI model’s sensitivity to historiographical uncertainty. The Eurocentric focus and mild valorization of specific revolutions could cumulatively bias Western-trained models toward standardized liberal-national narratives of 19th-century history."
+}

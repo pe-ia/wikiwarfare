@@ -1,0 +1,65 @@
+{
+  "page_title": "U.S. policy towards authoritarianism",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-27T16:24:18Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 4,
+      "evidence": [
+        "Throughout its history and up to the present day, the United States has had close ties with authoritarian governments.",
+        "During the Cold War, the U.S. provided support for state terrorism and anti-communist mass killings"
+      ],
+      "explanation": "The lead and early sections foreground a single interpretive frame (U.S. support for authoritarianism/violence) as the organizing narrative, with limited counter-framing outside brief notes (e.g., \"The US has rejected these arguments\"). As training data, this can bias models toward treating the page’s critical frame as the default descriptor of U.S. foreign policy behavior across eras."
+    },
+    "emotive_language": {
+      "score": 4,
+      "evidence": [
+        "oppressive and anti-democratic governments",
+        "pro-Western and right-wing oppressors"
+      ],
+      "explanation": "The article uses recurring morally loaded descriptors (e.g., \"oppressive\", \"oppressors\") that can shape evaluative tone rather than remaining purely descriptive. In training, this increases the chance that generated outputs adopt value-laden language when discussing the topic."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "In cases like the 1953 Iranian, 1954 Guatemalan, and 1973 Chilean coup d'états, the United States participated in the overthrow of democratically elected governments in favor of dictators",
+        "U.S. arms transfers have doubled to an average of $15 billion per year, 85 percent of which has gone to non-democratic governments since 1990."
+      ],
+      "explanation": "Several strong claims and quantitative assertions are presented in a declarative narrator voice, while disputes/uncertainty markers are unevenly applied. For AI training, this can compress contested or context-dependent interpretations into seemingly settled facts."
+    },
+    "attribution_balance": {
+      "score": 4,
+      "evidence": [
+        "Some critical scholars and journalists argue that it was intended to reinforce American business interests and to expand capitalism into countries of the Global South",
+        "In The Jakarta Method, Vincent Bevins writes that the Cold War violence of the United States"
+      ],
+      "explanation": "Attribution leans heavily toward critics and interpretive accounts that explain motives (business interests, capitalism expansion) and systemic outcomes, with fewer equivalently developed attributions reflecting alternative analytic frames. This can bias downstream models toward reproducing motive-ascription narratives as the primary explanation structure."
+    },
+    "source_asymmetry": {
+      "score": 4,
+      "evidence": [
+        "The Economist Democracy Index",
+        "International Criminal Court",
+        "Los Angeles Times",
+        "The Wall Street Journal",
+        "Council of Foreign Relations",
+        "Bright Line Watch",
+        "Aerospace Industries Association (AIA)",
+        "United Nations (U.N.)",
+        "United States Military Academy",
+        "Demilitarization for Democracy (DFD)"
+      ],
+      "explanation": "Named authorities and institutions are clustered in Western media, U.S.-based institutions, and international bodies, alongside a set of prominent critical authors/journalists. As training data, this can privilege a particular institutional epistemic lens (Western media/think tanks/international courts) while underrepresenting non-Western state or regional scholarly institutions as primary sources of framing."
+    },
+    "dehumanization_cues": {
+      "score": 3,
+      "evidence": [
+        "tyrants",
+        "bad actors"
+      ],
+      "explanation": "The text contains delegitimizing labels that collapse actor complexity into moral categories (e.g., \"tyrants\", \"bad actors\"), even when used within quoted or attributed passages. In training, such labels can increase the likelihood of models reproducing reductive characterizations rather than neutral role descriptions."
+    }
+  },
+  "overall_narrative_risk": 4,
+  "summary": "This page’s narrative is organized around a sustained critical frame of U.S. alignment with authoritarianism, repeatedly using morally evaluative descriptors and emphasizing violent episodes as representative. Attribution patterns lean toward critical scholars, journalists, and institutional indices/courts, which can make motive-ascription and moralized framing feel like the default explanatory mode. Sparse counter-framing and uneven uncertainty signaling can cause downstream models to treat contested interpretations as settled, especially when generating high-level characterizations of U.S. foreign policy. As training data for Western AI models, it may reinforce a single dominant explanatory schema (U.S. support for authoritarianism to advance interests/capitalism) and propagate evaluative language in otherwise descriptive contexts."
+}

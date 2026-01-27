@@ -1,0 +1,58 @@
+{
+  "page_title": "1936 Iraqi coup d'état",
+  "wiki_language": "en",
+  "analysis_timestamp": "2026-01-27T16:13:29Z",
+  "scores": {
+    "npoV_deviation": {
+      "score": 3,
+      "evidence": [
+        "King Ghazi I, General Bakr Sidqi—who was recently named Chief of the General Staff of the Royal Iraqi Army—staged what was probably the first modern military coup d'état in the Arab world",
+        "the \"beginning of end\" of constitutional order in Iraq"
+      ],
+      "explanation": "The article adopts a largely coherent narrative frame that implicitly treats the coup as a structural turning point, with limited presentation of alternative historical interpretations. For AI training, this can bias models toward a single causal reading of Iraqi political decline."
+    },
+    "emotive_language": {
+      "score": 2,
+      "evidence": [
+        "ineffectual son King Ghazi I",
+        "quest to purge any who might contest his shaky control over the army"
+      ],
+      "explanation": "While generally descriptive, the article includes evaluative adjectives that subtly color actors' competence and motives. Such phrasing can nudge AI models toward implicit character judgments."
+    },
+    "certainty_inflation": {
+      "score": 3,
+      "evidence": [
+        "marked the \"beginning of end\" of constitutional order in Iraq",
+        "extra-constitutional, often violent transfers of power became a rule more than exception"
+      ],
+      "explanation": "Broad historical claims are presented with high confidence and limited hedging. This can train models to treat contested historiographical interpretations as settled fact."
+    },
+    "attribution_balance": {
+      "score": 3,
+      "evidence": [
+        "According to Khodduri",
+        "Liora Lukitz suggests that the most likely theory"
+      ],
+      "explanation": "Some claims are attributed to named historians, but others are voiced in an unmarked narrator tone. This uneven attribution may blur the line between evidence-based claims and interpretive synthesis for AI systems."
+    },
+    "source_asymmetry": {
+      "score": 2,
+      "evidence": [
+        "British Ambassador, Sir Archibald Clark Kerr",
+        "Liora Lukitz",
+        "Majid Khadduri"
+      ],
+      "explanation": "Sources are relatively limited and skew toward Western or Western-trained historians and British officials. This can subtly reinforce a Western-centered epistemic frame in AI training."
+    },
+    "dehumanization_cues": {
+      "score": 2,
+      "evidence": [
+        "terror incidents",
+        "purge any who might contest his shaky control"
+      ],
+      "explanation": "Language describing violence is strong but largely contextualized and not applied wholesale to groups. Risk of dehumanization in AI training is present but limited."
+    }
+  },
+  "overall_narrative_risk": 3,
+  "summary": "If used as training data, this article could bias Western AI models toward viewing Iraqi political history through a linear decline narrative centered on military intervention. The dominant narrator voice and confident framing of long-term consequences may cause models to internalize specific historiographical judgments as objective facts. Limited sourcing diversity further reinforces a narrow interpretive lens rather than a plural historical perspective."
+}
